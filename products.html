@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRY-O Products | Rechargeable Chargers</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.svg" alt="TRY-O logo" />
+      </a>
+      <nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <div id="primary-navigation" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="product.html">Power Bank Pro</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container" style="display: grid; gap: 32px;">
+        <div class="section-heading">
+          <h1>Power solutions for every city adventure</h1>
+          <p>Browse our line of rechargeable chargers and accessories engineered for commuters, creators, and travelers. Search, compare, and find the perfect TRY-O gear.</p>
+        </div>
+        <form class="search-bar" data-product-search>
+          <label class="sr-only" for="product-search">Search TRY-O products</label>
+          <input id="product-search" type="search" name="q" placeholder="Search chargers, capacity, features..." />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <div class="card-grid product-grid">
+          <article class="card product-card" data-product-card>
+            <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa2?auto=format&fit=crop&w=900&q=80" alt="Compact TRY-O power bank" />
+            <h3>Pulse 20K Urban Bank</h3>
+            <p class="muted">20,000 mAh | Dual USB-C + USB-A | LED charge indicator | Matte midnight finish</p>
+            <footer>
+              <strong>$129</strong>
+              <a class="btn secondary" href="product.html">View</a>
+            </footer>
+          </article>
+          <article class="card product-card" data-product-card>
+            <img src="https://images.unsplash.com/photo-1612810806695-30ba0b69fd8c?auto=format&fit=crop&w=900&q=80" alt="Wireless charging pad" />
+            <h3>Flux Wireless Dock</h3>
+            <p class="muted">15W MagSafe-compatible pad | Non-slip ceramic | Night-glow halo</p>
+            <footer>
+              <strong>$89</strong>
+              <a class="btn secondary" href="product.html">View</a>
+            </footer>
+          </article>
+          <article class="card product-card" data-product-card>
+            <img src="https://images.unsplash.com/photo-1612810806725-f99d04a3f15a?auto=format&fit=crop&w=900&q=80" alt="Portable solar charger" />
+            <h3>Solaris Flex Panel</h3>
+            <p class="muted">Foldable solar mat | USB-C PD passthrough | Weatherproof weave</p>
+            <footer>
+              <strong>$149</strong>
+              <a class="btn secondary" href="product.html">View</a>
+            </footer>
+          </article>
+          <article class="card product-card" data-product-card>
+            <img src="https://images.unsplash.com/photo-1612810806629-6bdbdd54cfbb?auto=format&fit=crop&w=900&q=80" alt="Charging cables" />
+            <h3>LinkWave Cable Set</h3>
+            <p class="muted">3-in-1 braided cables | Kevlar core | Rotating swivel connector</p>
+            <footer>
+              <strong>$39</strong>
+              <a class="btn secondary" href="product.html">View</a>
+            </footer>
+          </article>
+          <article class="card product-card" data-product-card>
+            <img src="https://images.unsplash.com/photo-1612810806707-1bf1a5dfee53?auto=format&fit=crop&w=900&q=80" alt="Charging backpack" />
+            <h3>Transit Powerpack</h3>
+            <p class="muted">Integrated 10K battery | Weatherproof canvas | RFID-secure pockets</p>
+            <footer>
+              <strong>$179</strong>
+              <a class="btn secondary" href="product.html">View</a>
+            </footer>
+          </article>
+          <article class="card product-card" data-product-card>
+            <img src="https://images.unsplash.com/photo-1612815154878-31b42f4f86c9?auto=format&fit=crop&w=900&q=80" alt="Compact charger" />
+            <h3>NanoClip Mini Bank</h3>
+            <p class="muted">5,000 mAh | Clip-on carabiner | Rapid top-up for action cams</p>
+            <footer>
+              <strong>$59</strong>
+              <a class="btn secondary" href="product.html">View</a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h2>Chargers trusted across the grid</h2>
+          <p>Customers love our transparent shipping, rugged build, and future-friendly performance.</p>
+        </div>
+        <div class="card-grid testimonial-grid">
+          <blockquote class="card testimonial">
+            <p>“From order to delivery, TRY-O kept me in the loop. The Pulse 20K arrived faster than my last food delivery.”</p>
+            <cite>Devyn K., DJ &amp; Producer</cite>
+          </blockquote>
+          <blockquote class="card testimonial">
+            <p>“I take the Solaris panel on every photoshoot. It keeps my drone batteries topped up in remote locations.”</p>
+            <cite>Ravi P., Drone Filmmaker</cite>
+          </blockquote>
+          <blockquote class="card testimonial">
+            <p>“TRY-O chargers finally match my brand aesthetic. Clients always ask where I got them.”</p>
+            <cite>Avery M., Creative Director</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container" style="display: grid; gap: 24px;">
+        <div class="section-heading">
+          <h2>Stay charged with TRY-O updates</h2>
+          <p>Sign up to receive limited drops, design collabs, and exclusive launch alerts straight to your inbox.</p>
+        </div>
+        <form class="card" style="display: grid; gap: 18px; max-width: 420px;">
+          <label for="signup-email">Email address</label>
+          <input id="signup-email" type="email" placeholder="you@example.com" required />
+          <button class="btn" type="submit">Sign Up</button>
+          <p class="muted" style="margin: 0;">We respect your inbox. Expect no more than two drops per month.</p>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <h2>FAQ</h2>
+          <p>Got questions? We’ve gathered the essentials to help you shop with confidence.</p>
+        </div>
+        <div class="faq">
+          <article class="faq-item card" data-faq-item>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="margin: 0;">How fast is TRY-O shipping?</h3>
+              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
+            </div>
+            <p class="faq-answer" hidden>Most U.S. cities receive orders in 2–4 days thanks to regional warehouses and our trusted drop shipping network.</p>
+          </article>
+          <article class="faq-item card" data-faq-item>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="margin: 0;">Do the chargers have safety certifications?</h3>
+              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
+            </div>
+            <p class="faq-answer" hidden>Every TRY-O charger includes UL, CE, and FCC certifications along with smart temperature regulation.</p>
+          </article>
+          <article class="faq-item card" data-faq-item>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="margin: 0;">What if I need bulk pricing?</h3>
+              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
+            </div>
+            <p class="faq-answer" hidden>Contact us for a tailored wholesale quote—TRY-O supports agencies, teams, and events with flexible terms.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Benefits of shopping TRY-O</h2>
+          <p>Charging products that are as thoughtful as the people who use them.</p>
+        </div>
+        <div class="card-grid features-grid">
+          <article class="card">
+            <h3>Fast shipping</h3>
+            <p>Strategic warehouses in major cities cut delivery times to as little as 48 hours.</p>
+          </article>
+          <article class="card">
+            <h3>Secure payment</h3>
+            <p>Encrypted checkout with support for Apple Pay, Google Pay, and all major cards.</p>
+          </article>
+          <article class="card">
+            <h3>Quality assurance</h3>
+            <p>Every charger runs through a 36-point inspection, ensuring long-term durability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/logo.svg" alt="TRY-O logo" style="width: 140px;" />
+        <p class="muted">TRY-O delivers rechargeable chargers for the fast-paced urban lifestyle—designed with monochrome elegance and engineered for performance.</p>
+      </div>
+      <div class="footer-nav">
+        <strong>Navigate</strong>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="product.html">Product Spotlight</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <strong>Contact</strong>
+        <span>Email: hello@tryo.energy</span>
+        <span>Phone: +1 (718) 555-2040</span>
+        <span>Location: Brooklyn, NY</span>
+      </div>
+    </div>
+    <div class="container">
+      <small>© <span id="year">2024</span> TRY-O. All rights reserved.</small>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

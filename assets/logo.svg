@@ -1,0 +1,21 @@
+<svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">TRY-O logo</title>
+  <desc id="desc">Monochrome logo for TRY-O featuring striped lettering on a black background.</desc>
+  <defs>
+    <pattern id="stripe" patternUnits="userSpaceOnUse" width="12" height="12">
+      <rect width="12" height="12" fill="black" />
+      <rect y="0" width="12" height="6" fill="white" />
+    </pattern>
+    <style><![CDATA[
+      text {
+        font-family: 'Montserrat', 'Gill Sans', 'Futura', sans-serif;
+        font-weight: 700;
+        letter-spacing: 12px;
+      }
+    ]]></style>
+  </defs>
+  <rect width="400" height="160" fill="black" rx="12" ry="12" />
+  <g transform="translate(30,118)">
+    <text x="0" y="0" font-size="96" fill="url(#stripe)" stroke="white" stroke-width="3">TRY=O</text>
+  </g>
+</svg>
