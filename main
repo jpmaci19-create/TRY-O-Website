@@ -1,0 +1,1735 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/about.html b/about.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..5e5979f9d066dd3a865cf03c8b97fd66b66171c9
+--- /dev/null
++++ b/about.html
+@@ -0,0 +1,220 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++  <title>About TRY-O | Urban Charging Innovators</title>
++  <link rel="stylesheet" href="css/styles.css" />
++  <link rel="preconnect" href="https://fonts.googleapis.com" />
++  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
++</head>
++<body>
++  <header>
++    <div class="container navbar">
++      <a class="navbar-brand" href="index.html">
++        <img src="assets/logo.svg" alt="TRY-O logo" />
++      </a>
++      <nav>
++        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
++          <span></span>
++          <span></span>
++          <span></span>
++          <span class="sr-only">Toggle navigation</span>
++        </button>
++        <div id="primary-navigation" class="nav-links">
++          <a href="index.html">Home</a>
++          <a href="products.html">Products</a>
++          <a href="product.html">Power Bank Pro</a>
++          <a href="about.html">About Us</a>
++          <a href="contact.html">Contact</a>
++        </div>
++      </nav>
++    </div>
++  </header>
++
++  <main>
++    <section class="hero" style="padding-bottom: 40px;">
++      <div class="container hero">
++        <div class="hero-content">
++          <p class="badge">Our story</p>
++          <h1>TRY-O is recharging the future of urban mobility.</h1>
++          <p>
++            Founded by design-obsessed engineers and street culture aficionados, TRY-O merges performance technology with
++            monochrome aesthetics. We create rechargeable chargers that empower creators and commuters to roam freely.
++          </p>
++          <a class="btn" href="products.html">Shop the collection</a>
++        </div>
++        <div class="hero-visual">
++          <div class="hero-card">
++            <h3>Mission</h3>
++            <p>Power every modern mover with smart, safe, and stylish energy solutions.</p>
++            <h3>Vision</h3>
++            <p>Design energy ecosystems that make sustainable charging effortless.</p>
++            <h3>Values</h3>
++            <p>Bold design, responsible sourcing, transparency, and community collaboration.</p>
++          </div>
++        </div>
++      </div>
++    </section>
++
++    <section class="alt">
++      <div class="container">
++        <div class="section-heading">
++          <h2>From night rides to global drops</h2>
++          <p>TRY-O started as a passion project in Brooklyn and has grown into a global drop shipping hub for next-gen charging solutions.</p>
++        </div>
++        <div class="timeline">
++          <div class="timeline-item">
++            <span>2018</span>
++            <h4>Concept sparks</h4>
++            <p>Co-founders sketch the first TRY-O power bank inspired by subway tile patterns and streetwear minimalism.</p>
++          </div>
++          <div class="timeline-item">
++            <span>2019</span>
++            <h4>Prototype to product</h4>
++            <p>We partner with certified manufacturers and launch the first TRY-O limited run online.</p>
++          </div>
++          <div class="timeline-item">
++            <span>2021</span>
++            <h4>Global drop shipping network</h4>
++            <p>TRY-O expands to EU and Asia with localized fulfillment and sustainability partners.</p>
++          </div>
++          <div class="timeline-item">
++            <span>2023</span>
++            <h4>Urban charging ecosystem</h4>
++            <p>We introduce modular accessories, solar integrations, and collaborative design drops with local artists.</p>
++          </div>
++        </div>
++      </div>
++    </section>
++
++    <section>
++      <div class="container">
++        <div class="section-heading">
++          <h2>The TRY-O impact</h2>
++          <p>Our commitment to innovation and sustainability shows up in the numbers.</p>
++        </div>
++        <div class="card-grid stats-grid">
++          <article class="stat">
++            <strong>250K+</strong>
++            <span>Chargers shipped worldwide</span>
++          </article>
++          <article class="stat">
++            <strong>98%</strong>
++            <span>On-time delivery rate</span>
++          </article>
++          <article class="stat">
++            <strong>65%</strong>
++            <span>Recycled materials in packaging</span>
++          </article>
++          <article class="stat">
++            <strong>12</strong>
++            <span>City partnerships for charging hubs</span>
++          </article>
++        </div>
++      </div>
++    </section>
++
++    <section class="alt">
++      <div class="container">
++        <div class="section-heading">
++          <h2>Meet the crew</h2>
++          <p>The minds behind the energy revolution.</p>
++        </div>
++        <div class="card-grid team-grid">
++          <article class="card team-card">
++            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80" alt="Portrait of TRY-O CEO" />
++            <h3>Jordan Reyes</h3>
++            <p>Co-founder &amp; CEO</p>
++            <p class="muted">Leads the vision for urban-ready charging ecosystems.</p>
++          </article>
++          <article class="card team-card">
++            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Portrait of TRY-O CTO" />
++            <h3>Imani Chen</h3>
++            <p>Co-founder &amp; CTO</p>
++            <p class="muted">Oversees product engineering and safety innovation.</p>
++          </article>
++          <article class="card team-card">
++            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Portrait of TRY-O Head of Operations" />
++            <h3>Malik Ortiz</h3>
++            <p>Head of Operations</p>
++            <p class="muted">Keeps our global drop shipping network precise and responsive.</p>
++          </article>
++          <article class="card team-card">
++            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Portrait of TRY-O Creative Director" />
++            <h3>Astra Lee</h3>
++            <p>Creative Director</p>
++            <p class="muted">Shapes the monochrome visual identity and collaborations.</p>
++          </article>
++        </div>
++      </div>
++    </section>
++
++    <section>
++      <div class="container">
++        <div class="section-heading">
++          <h2>Trusted by innovators</h2>
++          <p>TRY-O partners with brands that value sustainability, design, and reliable energy.</p>
++        </div>
++        <div class="client-logos">
++          <img src="https://dummyimage.com/140x40/ffffff/000000&text=Hype+Lab" alt="Hype Lab logo" />
++          <img src="https://dummyimage.com/140x40/ffffff/000000&text=Metro+Co" alt="Metro Co logo" />
++          <img src="https://dummyimage.com/140x40/ffffff/000000&text=Volt+Studios" alt="Volt Studios logo" />
++          <img src="https://dummyimage.com/140x40/ffffff/000000&text=CitySync" alt="CitySync logo" />
++        </div>
++      </div>
++    </section>
++
++    <section class="alt">
++      <div class="container">
++        <div class="section-heading">
++          <h2>Client testimonials</h2>
++          <p>Hear from partners powering their communities with TRY-O.</p>
++        </div>
++        <div class="card-grid testimonial-grid">
++          <blockquote class="card testimonial">
++            <p>“TRY-O’s logistics team made onboarding effortless. Our co-working hubs now offer premium charging on every floor.”</p>
++            <cite>Nova Collective</cite>
++          </blockquote>
++          <blockquote class="card testimonial">
++            <p>“The monochrome design aligns perfectly with our brand aesthetics. Clients love the look and feel.”</p>
++            <cite>Studio Meridian</cite>
++          </blockquote>
++          <blockquote class="card testimonial">
++            <p>“Reliable hardware and transparent sustainability reporting set TRY-O apart from other suppliers.”</p>
++            <cite>Urban Grid Labs</cite>
++          </blockquote>
++        </div>
++      </div>
++    </section>
++  </main>
++
++  <footer class="footer">
++    <div class="container footer-grid">
++      <div>
++        <img src="assets/logo.svg" alt="TRY-O logo" style="width: 140px;" />
++        <p class="muted">TRY-O delivers rechargeable chargers for the fast-paced urban lifestyle—designed with monochrome elegance and engineered for performance.</p>
++      </div>
++      <div class="footer-nav">
++        <strong>Navigate</strong>
++        <a href="index.html">Home</a>
++        <a href="products.html">Products</a>
++        <a href="product.html">Product Spotlight</a>
++        <a href="about.html">About</a>
++        <a href="contact.html">Contact</a>
++      </div>
++      <div class="footer-contact">
++        <strong>Contact</strong>
++        <span>Email: hello@tryo.energy</span>
++        <span>Phone: +1 (718) 555-2040</span>
++        <span>Location: Brooklyn, NY</span>
++      </div>
++    </div>
++    <div class="container">
++      <small>© <span id="year">2024</span> TRY-O. All rights reserved.</small>
++    </div>
++  </footer>
++  <script src="js/main.js" defer></script>
++</body>
++</html>
+diff --git a/assets/logo.svg b/assets/logo.svg
+new file mode 100644
+index 0000000000000000000000000000000000000000..8d301a6dae4bb08e4c69c955d9b95bcbfbfa6368
+--- /dev/null
++++ b/assets/logo.svg
+@@ -0,0 +1,21 @@
++<svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
++  <title id="title">TRY-O logo</title>
++  <desc id="desc">Monochrome logo for TRY-O featuring striped lettering on a black background.</desc>
++  <defs>
++    <pattern id="stripe" patternUnits="userSpaceOnUse" width="12" height="12">
++      <rect width="12" height="12" fill="black" />
++      <rect y="0" width="12" height="6" fill="white" />
++    </pattern>
++    <style><![CDATA[
++      text {
++        font-family: 'Montserrat', 'Gill Sans', 'Futura', sans-serif;
++        font-weight: 700;
++        letter-spacing: 12px;
++      }
++    ]]></style>
++  </defs>
++  <rect width="400" height="160" fill="black" rx="12" ry="12" />
++  <g transform="translate(30,118)">
++    <text x="0" y="0" font-size="96" fill="url(#stripe)" stroke="white" stroke-width="3">TRY=O</text>
++  </g>
++</svg>
+diff --git a/contact.html b/contact.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..e2a8fd52b1349c0c89ab789aa7d015d6e55e50f4
+--- /dev/null
++++ b/contact.html
+@@ -0,0 +1,166 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++  <title>Contact TRY-O | Get in Touch</title>
++  <link rel="stylesheet" href="css/styles.css" />
++  <link rel="preconnect" href="https://fonts.googleapis.com" />
++  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
++</head>
++<body>
++  <header>
++    <div class="container navbar">
++      <a class="navbar-brand" href="index.html">
++        <img src="assets/logo.svg" alt="TRY-O logo" />
++      </a>
++      <nav>
++        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
++          <span></span>
++          <span></span>
++          <span></span>
++          <span class="sr-only">Toggle navigation</span>
++        </button>
++        <div id="primary-navigation" class="nav-links">
++          <a href="index.html">Home</a>
++          <a href="products.html">Products</a>
++          <a href="product.html">Power Bank Pro</a>
++          <a href="about.html">About Us</a>
++          <a href="contact.html">Contact</a>
++        </div>
++      </nav>
++    </div>
++  </header>
++
++  <main>
++    <section>
++      <div class="container" style="display: grid; gap: 16px;">
++        <p class="badge">Contact TRY-O</p>
++        <h1>Let’s connect about powering your world.</h1>
++        <p class="muted">Whether you’re an individual shopper, a wholesale partner, or a curious creator, we’re here to answer your questions.</p>
++        <div class="contact-grid">
++          <div class="contact-card">
++            <h3>Contact details</h3>
++            <p>Email: hello@tryo.energy</p>
++            <p>Phone: +1 (718) 555-2040</p>
++            <p>Address: 145 Wythe Ave, Brooklyn, NY</p>
++            <p>Business Hours: Mon–Fri, 9am–7pm EST</p>
++          </div>
++          <div class="contact-card">
++            <h3>Wholesale &amp; press</h3>
++            <p>Bulk inquiries: wholesale@tryo.energy</p>
++            <p>Media requests: press@tryo.energy</p>
++            <p>Partnerships: collab@tryo.energy</p>
++          </div>
++        </div>
++      </div>
++    </section>
++
++    <section class="alt">
++      <div class="container contact-grid">
++        <form class="card" style="gap: 18px;">
++          <h2>Send us a message</h2>
++          <div>
++            <label for="name">Name</label>
++            <input id="name" type="text" name="name" placeholder="Your name" required />
++          </div>
++          <div>
++            <label for="email">Email</label>
++            <input id="email" type="email" name="email" placeholder="you@example.com" required />
++          </div>
++          <div>
++            <label for="topic">Topic</label>
++            <select id="topic" name="topic">
++              <option value="support">Product support</option>
++              <option value="order">Order status</option>
++              <option value="wholesale">Wholesale inquiry</option>
++              <option value="press">Press / media</option>
++            </select>
++          </div>
++          <div>
++            <label for="message">Message</label>
++            <textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
++          </div>
++          <button class="btn" type="submit">Submit</button>
++        </form>
++        <div class="map-placeholder card">
++          <h2>Our HQ</h2>
++          <p>Brooklyn, New York</p>
++          <p class="muted">Interactive map coming soon. In the meantime, we’re right off the Bedford Ave L-train stop.</p>
++        </div>
++      </div>
++    </section>
++
++    <section>
++      <div class="container">
++        <div class="section-heading">
++          <h2>FAQ</h2>
++          <p>Quick answers to common inquiries.</p>
++        </div>
++        <div class="faq">
++          <article class="faq-item card" data-faq-item>
++            <div style="display: flex; justify-content: space-between; align-items: center;">
++              <h3 style="margin: 0;">How can I track my order?</h3>
++              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
++            </div>
++            <p class="faq-answer" hidden>You’ll receive a tracking number within 12 hours of fulfillment and real-time updates via SMS or email.</p>
++          </article>
++          <article class="faq-item card" data-faq-item>
++            <div style="display: flex; justify-content: space-between; align-items: center;">
++              <h3 style="margin: 0;">Do you offer international shipping?</h3>
++              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
++            </div>
++            <p class="faq-answer" hidden>Yes, TRY-O ships across North America, Europe, and select APAC cities with region-based fulfillment.</p>
++          </article>
++          <article class="faq-item card" data-faq-item>
++            <div style="display: flex; justify-content: space-between; align-items: center;">
++              <h3 style="margin: 0;">Can I schedule a consultation?</h3>
++              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
++            </div>
++            <p class="faq-answer" hidden>Absolutely. Submit the form above and we’ll book a time to talk about your needs.</p>
++          </article>
++        </div>
++      </div>
++    </section>
++
++    <section class="alt">
++      <div class="container" style="display: grid; gap: 24px; text-align: center;">
++        <h2>Need instant answers?</h2>
++        <p class="muted">Browse our knowledge base or drop us a line—TRY-O responds within one business day.</p>
++        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
++          <a class="btn" href="products.html">Shop Chargers</a>
++          <a class="btn secondary" href="mailto:hello@tryo.energy">Email Us</a>
++        </div>
++      </div>
++    </section>
++  </main>
++
++  <footer class="footer">
++    <div class="container footer-grid">
++      <div>
++        <img src="assets/logo.svg" alt="TRY-O logo" style="width: 140px;" />
++        <p class="muted">TRY-O delivers rechargeable chargers for the fast-paced urban lifestyle—designed with monochrome elegance and engineered for performance.</p>
++      </div>
++      <div class="footer-nav">
++        <strong>Navigate</strong>
++        <a href="index.html">Home</a>
++        <a href="products.html">Products</a>
++        <a href="product.html">Product Spotlight</a>
++        <a href="about.html">About</a>
++        <a href="contact.html">Contact</a>
++      </div>
++      <div class="footer-contact">
++        <strong>Contact</strong>
++        <span>Email: hello@tryo.energy</span>
++        <span>Phone: +1 (718) 555-2040</span>
++        <span>Location: Brooklyn, NY</span>
++      </div>
++    </div>
++    <div class="container">
++      <small>© <span id="year">2024</span> TRY-O. All rights reserved.</small>
++    </div>
++  </footer>
++  <script src="js/main.js" defer></script>
++</body>
++</html>
+diff --git a/css/styles.css b/css/styles.css
+new file mode 100644
+index 0000000000000000000000000000000000000000..6db2fbf29fae9b50dd9a08e847ca2b79ca65350a
+--- /dev/null
++++ b/css/styles.css
+@@ -0,0 +1,622 @@
++:root {
++  --bg-color: #050505;
++  --surface-color: #111111;
++  --surface-alt: #1c1c1c;
++  --text-color: #f5f5f5;
++  --muted-color: #b3b3b3;
++  --accent-color: #6cf0ff;
++  --accent-gradient: linear-gradient(135deg, #6cf0ff, #a6a6ff);
++  --max-width: 1100px;
++  --radius: 18px;
++  --shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
++}
++
++* {
++  box-sizing: border-box;
++}
++
++html {
++  scroll-behavior: smooth;
++}
++
++body {
++  margin: 0;
++  font-family: 'Montserrat', 'Poppins', 'Segoe UI', sans-serif;
++  background: radial-gradient(circle at top left, rgba(108, 240, 255, 0.08), transparent 45%),
++              radial-gradient(circle at bottom right, rgba(166, 166, 255, 0.08), transparent 50%),
++              var(--bg-color);
++  color: var(--text-color);
++  line-height: 1.6;
++}
++
++a {
++  color: inherit;
++  text-decoration: none;
++}
++
++a:hover,
++a:focus {
++  color: var(--accent-color);
++}
++
++img {
++  max-width: 100%;
++  display: block;
++}
++
++.container {
++  width: min(90%, var(--max-width));
++  margin: 0 auto;
++}
++
++section {
++  padding: 80px 0;
++}
++
++section.alt {
++  background: rgba(255, 255, 255, 0.02);
++}
++
++.card-grid {
++  display: grid;
++  gap: 24px;
++}
++
++.card {
++  background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
++  border: 1px solid rgba(255, 255, 255, 0.05);
++  border-radius: var(--radius);
++  padding: 32px;
++  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
++  backdrop-filter: blur(8px);
++}
++
++.card h3 {
++  margin-top: 0;
++}
++
++.btn {
++  display: inline-flex;
++  align-items: center;
++  gap: 12px;
++  padding: 14px 28px;
++  border-radius: 999px;
++  background: var(--accent-gradient);
++  color: #020202;
++  font-weight: 600;
++  text-transform: uppercase;
++  letter-spacing: 1px;
++  border: none;
++  cursor: pointer;
++  transition: transform 0.25s ease, box-shadow 0.25s ease;
++}
++
++.btn:hover,
++.btn:focus {
++  transform: translateY(-2px);
++  box-shadow: 0 14px 30px rgba(108, 240, 255, 0.4);
++}
++
++.btn.secondary {
++  background: transparent;
++  color: var(--accent-color);
++  border: 1px solid rgba(108, 240, 255, 0.5);
++}
++
++.btn.secondary:hover,
++.btn.secondary:focus {
++  box-shadow: 0 14px 30px rgba(108, 240, 255, 0.2);
++}
++
++header {
++  position: sticky;
++  top: 0;
++  z-index: 1000;
++  backdrop-filter: blur(16px);
++  background: rgba(5, 5, 5, 0.85);
++  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
++}
++
++.navbar {
++  display: flex;
++  align-items: center;
++  justify-content: space-between;
++  padding: 18px 0;
++}
++
++.navbar-brand {
++  display: flex;
++  align-items: center;
++  gap: 14px;
++}
++
++.navbar-brand img {
++  width: 140px;
++  height: auto;
++}
++
++.nav-links {
++  display: flex;
++  gap: 24px;
++  align-items: center;
++  font-size: 0.95rem;
++  letter-spacing: 0.04em;
++}
++
++.nav-toggle {
++  display: none;
++  flex-direction: column;
++  gap: 5px;
++  background: none;
++  border: none;
++  cursor: pointer;
++}
++
++.nav-toggle span {
++  width: 24px;
++  height: 2px;
++  background: var(--text-color);
++  transition: transform 0.3s ease, opacity 0.3s ease;
++}
++
++.sr-only {
++  position: absolute;
++  width: 1px;
++  height: 1px;
++  padding: 0;
++  margin: -1px;
++  overflow: hidden;
++  clip: rect(0, 0, 0, 0);
++  white-space: nowrap;
++  border: 0;
++}
++
++.hero {
++  display: grid;
++  gap: 40px;
++  align-items: center;
++  min-height: 70vh;
++  padding-top: 60px;
++}
++
++.hero-content h1 {
++  font-size: clamp(2.6rem, 4vw, 3.6rem);
++  margin-bottom: 24px;
++  line-height: 1.1;
++}
++
++.hero-content p {
++  color: var(--muted-color);
++  max-width: 580px;
++  margin-bottom: 32px;
++}
++
++.hero-visual {
++  position: relative;
++  display: grid;
++  place-items: center;
++}
++
++.hero-visual::before {
++  content: '';
++  position: absolute;
++  inset: 12% 6% 18% 12%;
++  background: radial-gradient(circle, rgba(108, 240, 255, 0.12), transparent 70%);
++  filter: blur(10px);
++}
++
++.hero-card {
++  position: relative;
++  padding: 48px;
++  border-radius: var(--radius);
++  background: rgba(17, 17, 17, 0.85);
++  border: 1px solid rgba(108, 240, 255, 0.4);
++  box-shadow: var(--shadow);
++  max-width: 380px;
++  text-align: center;
++}
++
++.hero-card h3 {
++  margin-bottom: 12px;
++}
++
++.tag-list {
++  display: flex;
++  flex-wrap: wrap;
++  gap: 12px;
++}
++
++.tag {
++  padding: 8px 16px;
++  border-radius: 999px;
++  background: rgba(108, 240, 255, 0.1);
++  color: var(--accent-color);
++  font-size: 0.8rem;
++  text-transform: uppercase;
++  letter-spacing: 0.1em;
++}
++
++.section-heading {
++  display: flex;
++  flex-direction: column;
++  gap: 12px;
++  margin-bottom: 40px;
++}
++
++.section-heading h2 {
++  font-size: clamp(2rem, 3vw, 2.6rem);
++  margin: 0;
++}
++
++.section-heading p {
++  color: var(--muted-color);
++  max-width: 640px;
++}
++
++.features-grid {
++  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
++}
++
++.testimonial {
++  display: flex;
++  flex-direction: column;
++  gap: 16px;
++}
++
++.testimonial cite {
++  font-style: normal;
++  color: var(--muted-color);
++  text-transform: uppercase;
++  letter-spacing: 0.08em;
++}
++
++.footer {
++  border-top: 1px solid rgba(255, 255, 255, 0.06);
++  padding: 48px 0;
++  background: rgba(0,0,0,0.85);
++}
++
++.footer-grid {
++  display: grid;
++  gap: 32px;
++  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
++}
++
++.footer-nav,
++.footer-contact {
++  display: grid;
++  gap: 12px;
++  color: var(--muted-color);
++}
++
++.footer small {
++  display: block;
++  margin-top: 24px;
++  color: rgba(255, 255, 255, 0.35);
++}
++
++.hero-subtitle,
++.muted {
++  color: var(--muted-color);
++}
++
++.product-grid {
++  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
++}
++
++.product-card {
++  display: flex;
++  flex-direction: column;
++  gap: 16px;
++}
++
++.product-card img {
++  border-radius: 16px;
++  aspect-ratio: 4 / 3;
++  object-fit: cover;
++  border: 1px solid rgba(255, 255, 255, 0.08);
++}
++
++.product-card footer {
++  margin-top: auto;
++  display: flex;
++  justify-content: space-between;
++  align-items: center;
++}
++
++.product-card strong {
++  font-size: 1.15rem;
++}
++
++.pricing-breakdown {
++  display: grid;
++  gap: 16px;
++}
++
++.pricing-row {
++  display: flex;
++  justify-content: space-between;
++  align-items: center;
++  padding: 12px 0;
++  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
++}
++
++.pricing-total {
++  font-size: 1.4rem;
++  font-weight: 600;
++  color: var(--accent-color);
++}
++
++.faq {
++  display: grid;
++  gap: 18px;
++}
++
++.faq-item {
++  padding: 24px;
++  border-radius: var(--radius);
++  background: rgba(255,255,255,0.03);
++  border: 1px solid rgba(255, 255, 255, 0.05);
++}
++
++.timeline {
++  position: relative;
++  padding-left: 28px;
++}
++
++.timeline::before {
++  content: '';
++  position: absolute;
++  left: 10px;
++  top: 0;
++  bottom: 0;
++  width: 2px;
++  background: rgba(255, 255, 255, 0.18);
++}
++
++.timeline-item {
++  margin-bottom: 24px;
++}
++
++.timeline-item h4 {
++  margin: 0 0 8px;
++}
++
++.timeline-item span {
++  color: var(--accent-color);
++  font-size: 0.9rem;
++}
++
++.stats-grid {
++  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
++  text-align: center;
++}
++
++.stat {
++  padding: 24px;
++  border-radius: var(--radius);
++  background: rgba(255,255,255,0.03);
++  border: 1px solid rgba(255, 255, 255, 0.05);
++}
++
++.stat strong {
++  display: block;
++  font-size: 2rem;
++  margin-bottom: 6px;
++  color: var(--accent-color);
++}
++
++.team-grid {
++  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
++}
++
++.team-card img {
++  border-radius: 999px;
++  width: 120px;
++  height: 120px;
++  object-fit: cover;
++  margin-bottom: 18px;
++  border: 2px solid rgba(108, 240, 255, 0.4);
++}
++
++.team-card p {
++  margin: 4px 0;
++  color: var(--muted-color);
++}
++
++.client-logos {
++  display: flex;
++  flex-wrap: wrap;
++  gap: 24px;
++  align-items: center;
++}
++
++.client-logos img {
++  height: 40px;
++  filter: invert(1);
++  opacity: 0.7;
++}
++
++.contact-grid {
++  display: grid;
++  gap: 32px;
++  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
++}
++
++.contact-card {
++  padding: 24px;
++  background: rgba(255,255,255,0.03);
++  border-radius: var(--radius);
++  border: 1px solid rgba(255, 255, 255, 0.05);
++}
++
++form {
++  display: grid;
++  gap: 18px;
++}
++
++label {
++  font-weight: 600;
++  letter-spacing: 0.03em;
++}
++
++input,
++textarea,
++select {
++  padding: 14px 16px;
++  border-radius: 12px;
++  border: 1px solid rgba(255, 255, 255, 0.08);
++  background: rgba(255,255,255,0.08);
++  color: var(--text-color);
++  font-family: inherit;
++}
++
++input:focus,
++textarea:focus,
++select:focus {
++  outline: 2px solid rgba(108, 240, 255, 0.6);
++}
++
++.map-placeholder {
++  border-radius: var(--radius);
++  border: 1px solid rgba(255, 255, 255, 0.05);
++  padding: 32px;
++  background: rgba(255,255,255,0.02);
++  text-align: center;
++  color: var(--muted-color);
++}
++
++.testimonial-grid {
++  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
++}
++
++.review-list {
++  display: grid;
++  gap: 24px;
++}
++
++.review {
++  padding: 24px;
++  border-radius: var(--radius);
++  background: rgba(255,255,255,0.03);
++  border: 1px solid rgba(255, 255, 255, 0.05);
++}
++
++.review header {
++  display: flex;
++  justify-content: space-between;
++  align-items: baseline;
++  margin-bottom: 12px;
++}
++
++.review header h4 {
++  margin: 0;
++}
++
++.badge {
++  display: inline-block;
++  padding: 6px 14px;
++  border-radius: 999px;
++  background: rgba(108, 240, 255, 0.12);
++  color: var(--accent-color);
++  font-size: 0.78rem;
++  letter-spacing: 0.08em;
++  text-transform: uppercase;
++}
++
++.table {
++  width: 100%;
++  border-collapse: collapse;
++}
++
++.table th,
++.table td {
++  text-align: left;
++  padding: 12px;
++  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
++}
++
++.search-bar {
++  display: flex;
++  gap: 12px;
++  align-items: center;
++  padding: 14px 18px;
++  border-radius: 999px;
++  background: rgba(255,255,255,0.08);
++  border: 1px solid rgba(255, 255, 255, 0.08);
++}
++
++.search-bar input {
++  border: none;
++  background: transparent;
++  padding: 0;
++}
++
++.search-bar button {
++  border: none;
++  background: var(--accent-gradient);
++  padding: 12px 20px;
++  border-radius: 999px;
++  font-weight: 600;
++  cursor: pointer;
++}
++
++@media (max-width: 860px) {
++  .nav-toggle {
++    display: flex;
++  }
++
++  .nav-links {
++    position: absolute;
++    top: 72px;
++    right: 20px;
++    flex-direction: column;
++    gap: 18px;
++    padding: 24px;
++    background: rgba(5, 5, 5, 0.95);
++    border-radius: var(--radius);
++    border: 1px solid rgba(255, 255, 255, 0.08);
++    min-width: 220px;
++    opacity: 0;
++    pointer-events: none;
++    transform: translateY(-10px);
++    transition: opacity 0.3s ease, transform 0.3s ease;
++  }
++
++  .nav-links.open {
++    opacity: 1;
++    pointer-events: auto;
++    transform: translateY(0);
++  }
++
++  section {
++    padding: 60px 0;
++  }
++
++  .hero {
++    grid-template-columns: 1fr;
++    text-align: center;
++  }
++
++  .hero-content p {
++    margin-inline: auto;
++  }
++
++  .hero-card {
++    margin: 0 auto;
++  }
++}
++
++@media (max-width: 480px) {
++  .hero-content h1 {
++    font-size: 2.2rem;
++  }
++
++  .navbar-brand img {
++    width: 110px;
++  }
++
++  .card {
++    padding: 24px;
++  }
++}
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..1d9c75a41cf0119436a44cf39bcbc2e35b0bd444
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,183 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++  <title>TRY-O | Urban Rechargeable Chargers</title>
++  <link rel="stylesheet" href="css/styles.css" />
++  <link rel="preconnect" href="https://fonts.googleapis.com" />
++  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
++</head>
++<body>
++  <header>
++    <div class="container navbar">
++      <a class="navbar-brand" href="index.html">
++        <img src="assets/logo.svg" alt="TRY-O logo" />
++      </a>
++      <nav>
++        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
++          <span></span>
++          <span></span>
++          <span></span>
++          <span class="sr-only">Toggle navigation</span>
++        </button>
++        <div id="primary-navigation" class="nav-links">
++          <a href="index.html">Home</a>
++          <a href="products.html">Products</a>
++          <a href="product.html">Power Bank Pro</a>
++          <a href="about.html">About Us</a>
++          <a href="contact.html">Contact</a>
++        </div>
++      </nav>
++    </div>
++  </header>
++
++  <main>
++    <section class="hero" id="hero">
++      <div class="container hero">
++        <div class="hero-content">
++          <p class="badge">Urban power, reimagined</p>
++          <h1>Rechargeable chargers built for the rhythm of your city life.</h1>
++          <p>
++            TRY-O delivers sleek, high-capacity charging gear that keeps your devices alive through long
++            commutes, spontaneous adventures, and every hustle in between. Power up safely, sustainably,
++            and in signature monochrome style.
++          </p>
++          <div class="tag-list">
++            <span class="tag">Fast charging</span>
++            <span class="tag">Travel ready</span>
++            <span class="tag">Carbon-conscious</span>
++          </div>
++          <div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 16px;">
++            <a class="btn" href="products.html">Explore Products</a>
++            <a class="btn secondary" href="contact.html">Talk to Us</a>
++          </div>
++        </div>
++        <div class="hero-visual">
++          <div class="hero-card">
++            <h3>Pulse 20K Urban Bank</h3>
++            <p class="hero-subtitle">20,000 mAh | Dual USB-C PD | Smart LED charge halo</p>
++            <p class="muted">
++              Designed for street-smart creators, commuters, and night owls who need uncompromising power
++              without compromising aesthetics.
++            </p>
++            <a class="btn" href="product.html">View Details</a>
++          </div>
++        </div>
++      </div>
++    </section>
++
++    <section id="features">
++      <div class="container">
++        <div class="section-heading">
++          <h2>Why TRY-O changes the charging game</h2>
++          <p>Our drop shipping service partners with next-gen manufacturers to deliver innovative energy solutions that look as sharp as they perform.</p>
++        </div>
++        <div class="card-grid features-grid">
++          <article class="card">
++            <h3>Curated drop shipping network</h3>
++            <p>We handpick trusted suppliers with certified quality control and lightning-fast fulfillment. Your charger ships directly from experts obsessed with reliability.</p>
++          </article>
++          <article class="card">
++            <h3>Safe, certified delivery</h3>
++            <p>Each order is tracked in real time with proactive status alerts. Our logistics partners specialize in handling high-density batteries securely.</p>
++          </article>
++          <article class="card">
++            <h3>Urban aesthetics</h3>
++            <p>All TRY-O gear carries a bold black-and-white palette with subtle neon accents—made to complement sneakers, backpacks, and the modern workspace.</p>
++          </article>
++          <article class="card">
++            <h3>Efficient energy tech</h3>
++            <p>Cutting-edge cells, smart temperature regulation, and adaptive PD ensure your devices get the charge they need without wasted energy.</p>
++          </article>
++        </div>
++      </div>
++    </section>
++
++    <section class="alt" id="feature-list">
++      <div class="container">
++        <div class="section-heading">
++          <h2>Signature TRY-O advantages</h2>
++          <p>Our chargers deliver more than power—they deliver peace of mind, design inspiration, and tech-forward convenience.</p>
++        </div>
++        <div class="card-grid features-grid">
++          <article class="card">
++            <h3>Safe &amp; efficient delivery</h3>
++            <p>Every shipment includes smart monitoring and eco-friendly packaging to protect your charger and the planet.</p>
++          </article>
++          <article class="card">
++            <h3>Black &amp; white aesthetics</h3>
++            <p>Minimalist bodies, reflective detailing, and tactile finishes give TRY-O devices a distinctive monochrome edge.</p>
++          </article>
++          <article class="card">
++            <h3>Urban style products</h3>
++            <p>From modular clip systems to street-ready straps, TRY-O accessories elevate your everyday carry.</p>
++          </article>
++        </div>
++      </div>
++    </section>
++
++    <section id="testimonials">
++      <div class="container">
++        <div class="section-heading">
++          <h2>Stories from the TRY-O community</h2>
++          <p>Listen to the creators, commuters, and founders who rely on TRY-O to keep the momentum going.</p>
++        </div>
++        <div class="card-grid testimonial-grid">
++          <blockquote class="card testimonial">
++            <p>“TRY-O’s chargers feel like part of my outfit. They’re slim, edgy, and the PD output keeps my camera rig juiced on the go.”</p>
++            <cite>Jamie L., Street Photographer</cite>
++          </blockquote>
++          <blockquote class="card testimonial">
++            <p>“The drop shipping updates were so transparent. I knew exactly when my power bank landed and it arrived fully charged.”</p>
++            <cite>Marcus R., Startup Founder</cite>
++          </blockquote>
++          <blockquote class="card testimonial">
++            <p>“Finally, a charger that fits the vibe of my co-working space. TRY-O makes my desk setup look intentional.”</p>
++            <cite>Alana S., UX Designer</cite>
++          </blockquote>
++        </div>
++      </div>
++    </section>
++
++    <section class="alt" id="cta">
++      <div class="container" style="display: grid; gap: 24px; text-align: center;">
++        <h2>Ready to experience urban energy without limits?</h2>
++        <p class="muted">Browse the TRY-O line or reach out for a custom wholesale plan. Either way, we’ll power what matters most.</p>
++        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
++          <a class="btn" href="products.html">Browse Chargers</a>
++          <a class="btn secondary" href="contact.html">Get in Touch</a>
++        </div>
++      </div>
++    </section>
++  </main>
++
++  <footer class="footer">
++    <div class="container footer-grid">
++      <div>
++        <img src="assets/logo.svg" alt="TRY-O logo" style="width: 140px;" />
++        <p class="muted">TRY-O delivers rechargeable chargers for the fast-paced urban lifestyle—designed with monochrome elegance and engineered for performance.</p>
++      </div>
++      <div class="footer-nav">
++        <strong>Navigate</strong>
++        <a href="index.html">Home</a>
++        <a href="products.html">Products</a>
++        <a href="product.html">Product Spotlight</a>
++        <a href="about.html">About</a>
++        <a href="contact.html">Contact</a>
++      </div>
++      <div class="footer-contact">
++        <strong>Contact</strong>
++        <span>Email: hello@tryo.energy</span>
++        <span>Phone: +1 (718) 555-2040</span>
++        <span>Location: Brooklyn, NY</span>
++      </div>
++    </div>
++    <div class="container">
++      <small>© <span id="year">2024</span> TRY-O. All rights reserved.</small>
++    </div>
++  </footer>
++  <script src="js/main.js" defer></script>
++</body>
++</html>
+diff --git a/js/main.js b/js/main.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..21f56964d1d239683f3bceb3c2f1df26fa3ad389
+--- /dev/null
++++ b/js/main.js
+@@ -0,0 +1,49 @@
++const navToggle = document.querySelector('.nav-toggle');
++const navLinks = document.querySelector('.nav-links');
++
++if (navToggle && navLinks) {
++  navToggle.addEventListener('click', () => {
++    navLinks.classList.toggle('open');
++    navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
++  });
++}
++
++const searchForm = document.querySelector('[data-product-search]');
++
++if (searchForm) {
++  const input = searchForm.querySelector('input');
++  const cards = document.querySelectorAll('[data-product-card]');
++
++  searchForm.addEventListener('submit', (event) => {
++    event.preventDefault();
++  });
++
++  if (input) {
++    input.addEventListener('input', () => {
++      const query = input.value.trim().toLowerCase();
++      cards.forEach((card) => {
++        const text = card.textContent.toLowerCase();
++        card.style.display = text.includes(query) ? '' : 'none';
++      });
++    });
++  }
++}
++
++const faqItems = document.querySelectorAll('[data-faq-item]');
++
++faqItems.forEach((item) => {
++  const question = item.querySelector('button');
++  const answer = item.querySelector('.faq-answer');
++  if (!question || !answer) return;
++
++  question.addEventListener('click', () => {
++    const expanded = question.getAttribute('aria-expanded') === 'true';
++    question.setAttribute('aria-expanded', String(!expanded));
++    answer.hidden = expanded;
++  });
++});
++
++const yearField = document.getElementById('year');
++if (yearField) {
++  yearField.textContent = new Date().getFullYear();
++}
+diff --git a/product.html b/product.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..b09b8a40ef987ae296dc5a3a9b0f0578d309a011
+--- /dev/null
++++ b/product.html
+@@ -0,0 +1,189 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++  <title>Pulse 20K Urban Bank | TRY-O</title>
++  <link rel="stylesheet" href="css/styles.css" />
++  <link rel="preconnect" href="https://fonts.googleapis.com" />
++  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
++</head>
++<body>
++  <header>
++    <div class="container navbar">
++      <a class="navbar-brand" href="index.html">
++        <img src="assets/logo.svg" alt="TRY-O logo" />
++      </a>
++      <nav>
++        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
++          <span></span>
++          <span></span>
++          <span></span>
++          <span class="sr-only">Toggle navigation</span>
++        </button>
++        <div id="primary-navigation" class="nav-links">
++          <a href="index.html">Home</a>
++          <a href="products.html">Products</a>
++          <a href="product.html">Power Bank Pro</a>
++          <a href="about.html">About Us</a>
++          <a href="contact.html">Contact</a>
++        </div>
++      </nav>
++    </div>
++  </header>
++
++  <main>
++    <section>
++      <div class="container" style="display: grid; gap: 36px;">
++        <div class="section-heading">
++          <h1>Pulse 20K Urban Bank</h1>
++          <p>High-capacity portable charger with dual USB-C PD, smart safety sensors, and monochrome finish built for the city.</p>
++        </div>
++        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: center;">
++          <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa2?auto=format&fit=crop&w=1200&q=80" alt="Pulse 20K Urban Bank charger" style="border-radius: 24px; border: 1px solid rgba(255,255,255,0.08);" />
++          <div class="card" style="gap: 18px;">
++            <h2>$129</h2>
++            <p class="muted">Availability: In stock — ships within 48 hours</p>
++            <p>Experience adaptive charging with 60W output, dual-device support, and a slim profile that slides seamlessly into any bag.</p>
++            <ul style="margin: 0; padding-left: 20px; display: grid; gap: 8px;">
++              <li>20,000 mAh graphene-enhanced cells</li>
++              <li>Dual USB-C PD + USB-A QuickCharge</li>
++              <li>LED halo indicators &amp; ambient nightlight mode</li>
++              <li>Impact-resistant monochrome alloy shell</li>
++            </ul>
++            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
++              <button class="btn" type="button">Add to Cart</button>
++              <button class="btn secondary" type="button">Buy Now</button>
++            </div>
++          </div>
++        </div>
++      </div>
++    </section>
++
++    <section class="alt">
++      <div class="container">
++        <div class="section-heading">
++          <h2>What customers are saying</h2>
++          <p>TRY-O shoppers love the mix of style, endurance, and safety that Pulse 20K brings.</p>
++        </div>
++        <div class="card-grid testimonial-grid">
++          <blockquote class="card testimonial">
++            <p>“The Pulse 20K powers my laptop and tablet at the same time. It’s rare to find a charger that looks this good.”</p>
++            <cite>Lena T., Interior Designer</cite>
++          </blockquote>
++          <blockquote class="card testimonial">
++            <p>“I ride the subway daily. The matte finish never scuffs and the LED halo doubles as a late-night light.”</p>
++            <cite>Arjun K., Music Producer</cite>
++          </blockquote>
++          <blockquote class="card testimonial">
++            <p>“Battery anxiety is gone. The dual USB-C outputs mean my phone and camera are always ready.”</p>
++            <cite>Marisol D., Travel Blogger</cite>
++          </blockquote>
++        </div>
++      </div>
++    </section>
++
++    <section>
++      <div class="container">
++        <div class="section-heading">
++          <h2>In-depth reviews</h2>
++          <p>Explore how the Pulse 20K Urban Bank integrates into different routines.</p>
++        </div>
++        <div class="review-list">
++          <article class="review">
++            <header>
++              <h4>Built for daily commuters</h4>
++              <span>★★★★★</span>
++            </header>
++            <p class="muted">“It lives in my backpack front pocket and still feels featherlight. The auto-shutoff prevents overcharging overnight.”</p>
++            <p>— Maya S.</p>
++          </article>
++          <article class="review">
++            <header>
++              <h4>Creator-approved power</h4>
++              <span>★★★★☆</span>
++            </header>
++            <p class="muted">“I shoot video content outdoors all day. The Pulse bank handles my gimbal and mirrorless camera without breaking a sweat.”</p>
++            <p>— Hugo W.</p>
++          </article>
++          <article class="review">
++            <header>
++              <h4>Great for remote trips</h4>
++              <span>★★★★★</span>
++            </header>
++            <p class="muted">“Pair it with the Solaris panel and you’ve got endless juice. I camp for days while keeping my smartwatch topped up.”</p>
++            <p>— River L.</p>
++          </article>
++        </div>
++      </div>
++    </section>
++
++    <section class="alt">
++      <div class="container">
++        <div class="section-heading">
++          <h2>Pricing breakdown</h2>
++          <p>Transparent pricing keeps your decisions simple.</p>
++        </div>
++        <div class="card pricing-breakdown" style="max-width: 520px; margin-inline: auto;">
++          <div class="pricing-row">
++            <span>Pulse 20K Urban Bank</span>
++            <span>$119.00</span>
++          </div>
++          <div class="pricing-row">
++            <span>Protective case add-on</span>
++            <span>$10.00</span>
++          </div>
++          <div class="pricing-row">
++            <span>Insured urban shipping</span>
++            <span>$8.00</span>
++          </div>
++          <div class="pricing-row pricing-total">
++            <span>Total</span>
++            <span>$137.00</span>
++          </div>
++          <p class="muted" style="margin: 0;">Taxes calculated at checkout based on your location.</p>
++        </div>
++      </div>
++    </section>
++
++    <section>
++      <div class="container" style="display: grid; gap: 24px; text-align: center;">
++        <h2>Ready to fuel your next move?</h2>
++        <p class="muted">Add the Pulse 20K Urban Bank to your cart or explore more TRY-O chargers tailored for your lifestyle.</p>
++        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
++          <button class="btn" type="button">Add to Cart</button>
++          <a class="btn secondary" href="products.html">View All Products</a>
++        </div>
++      </div>
++    </section>
++  </main>
++
++  <footer class="footer">
++    <div class="container footer-grid">
++      <div>
++        <img src="assets/logo.svg" alt="TRY-O logo" style="width: 140px;" />
++        <p class="muted">TRY-O delivers rechargeable chargers for the fast-paced urban lifestyle—designed with monochrome elegance and engineered for performance.</p>
++      </div>
++      <div class="footer-nav">
++        <strong>Navigate</strong>
++        <a href="index.html">Home</a>
++        <a href="products.html">Products</a>
++        <a href="product.html">Product Spotlight</a>
++        <a href="about.html">About</a>
++        <a href="contact.html">Contact</a>
++      </div>
++      <div class="footer-contact">
++        <strong>Contact</strong>
++        <span>Email: hello@tryo.energy</span>
++        <span>Phone: +1 (718) 555-2040</span>
++        <span>Location: Brooklyn, NY</span>
++      </div>
++    </div>
++    <div class="container">
++      <small>© <span id="year">2024</span> TRY-O. All rights reserved.</small>
++    </div>
++  </footer>
++  <script src="js/main.js" defer></script>
++</body>
++</html>
+diff --git a/products.html b/products.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..a3365ecd77932a6c81dca6e95f373599cca404ac
+--- /dev/null
++++ b/products.html
+@@ -0,0 +1,233 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++  <title>TRY-O Products | Rechargeable Chargers</title>
++  <link rel="stylesheet" href="css/styles.css" />
++  <link rel="preconnect" href="https://fonts.googleapis.com" />
++  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
++</head>
++<body>
++  <header>
++    <div class="container navbar">
++      <a class="navbar-brand" href="index.html">
++        <img src="assets/logo.svg" alt="TRY-O logo" />
++      </a>
++      <nav>
++        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
++          <span></span>
++          <span></span>
++          <span></span>
++          <span class="sr-only">Toggle navigation</span>
++        </button>
++        <div id="primary-navigation" class="nav-links">
++          <a href="index.html">Home</a>
++          <a href="products.html">Products</a>
++          <a href="product.html">Power Bank Pro</a>
++          <a href="about.html">About Us</a>
++          <a href="contact.html">Contact</a>
++        </div>
++      </nav>
++    </div>
++  </header>
++
++  <main>
++    <section>
++      <div class="container" style="display: grid; gap: 32px;">
++        <div class="section-heading">
++          <h1>Power solutions for every city adventure</h1>
++          <p>Browse our line of rechargeable chargers and accessories engineered for commuters, creators, and travelers. Search, compare, and find the perfect TRY-O gear.</p>
++        </div>
++        <form class="search-bar" data-product-search>
++          <label class="sr-only" for="product-search">Search TRY-O products</label>
++          <input id="product-search" type="search" name="q" placeholder="Search chargers, capacity, features..." />
++          <button type="submit">Search</button>
++        </form>
++      </div>
++    </section>
++
++    <section class="alt">
++      <div class="container">
++        <div class="card-grid product-grid">
++          <article class="card product-card" data-product-card>
++            <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa2?auto=format&fit=crop&w=900&q=80" alt="Compact TRY-O power bank" />
++            <h3>Pulse 20K Urban Bank</h3>
++            <p class="muted">20,000 mAh | Dual USB-C + USB-A | LED charge indicator | Matte midnight finish</p>
++            <footer>
++              <strong>$129</strong>
++              <a class="btn secondary" href="product.html">View</a>
++            </footer>
++          </article>
++          <article class="card product-card" data-product-card>
++            <img src="https://images.unsplash.com/photo-1612810806695-30ba0b69fd8c?auto=format&fit=crop&w=900&q=80" alt="Wireless charging pad" />
++            <h3>Flux Wireless Dock</h3>
++            <p class="muted">15W MagSafe-compatible pad | Non-slip ceramic | Night-glow halo</p>
++            <footer>
++              <strong>$89</strong>
++              <a class="btn secondary" href="product.html">View</a>
++            </footer>
++          </article>
++          <article class="card product-card" data-product-card>
++            <img src="https://images.unsplash.com/photo-1612810806725-f99d04a3f15a?auto=format&fit=crop&w=900&q=80" alt="Portable solar charger" />
++            <h3>Solaris Flex Panel</h3>
++            <p class="muted">Foldable solar mat | USB-C PD passthrough | Weatherproof weave</p>
++            <footer>
++              <strong>$149</strong>
++              <a class="btn secondary" href="product.html">View</a>
++            </footer>
++          </article>
++          <article class="card product-card" data-product-card>
++            <img src="https://images.unsplash.com/photo-1612810806629-6bdbdd54cfbb?auto=format&fit=crop&w=900&q=80" alt="Charging cables" />
++            <h3>LinkWave Cable Set</h3>
++            <p class="muted">3-in-1 braided cables | Kevlar core | Rotating swivel connector</p>
++            <footer>
++              <strong>$39</strong>
++              <a class="btn secondary" href="product.html">View</a>
++            </footer>
++          </article>
++          <article class="card product-card" data-product-card>
++            <img src="https://images.unsplash.com/photo-1612810806707-1bf1a5dfee53?auto=format&fit=crop&w=900&q=80" alt="Charging backpack" />
++            <h3>Transit Powerpack</h3>
++            <p class="muted">Integrated 10K battery | Weatherproof canvas | RFID-secure pockets</p>
++            <footer>
++              <strong>$179</strong>
++              <a class="btn secondary" href="product.html">View</a>
++            </footer>
++          </article>
++          <article class="card product-card" data-product-card>
++            <img src="https://images.unsplash.com/photo-1612815154878-31b42f4f86c9?auto=format&fit=crop&w=900&q=80" alt="Compact charger" />
++            <h3>NanoClip Mini Bank</h3>
++            <p class="muted">5,000 mAh | Clip-on carabiner | Rapid top-up for action cams</p>
++            <footer>
++              <strong>$59</strong>
++              <a class="btn secondary" href="product.html">View</a>
++            </footer>
++          </article>
++        </div>
++      </div>
++    </section>
++
++    <section>
++      <div class="container">
++        <div class="section-heading">
++          <h2>Chargers trusted across the grid</h2>
++          <p>Customers love our transparent shipping, rugged build, and future-friendly performance.</p>
++        </div>
++        <div class="card-grid testimonial-grid">
++          <blockquote class="card testimonial">
++            <p>“From order to delivery, TRY-O kept me in the loop. The Pulse 20K arrived faster than my last food delivery.”</p>
++            <cite>Devyn K., DJ &amp; Producer</cite>
++          </blockquote>
++          <blockquote class="card testimonial">
++            <p>“I take the Solaris panel on every photoshoot. It keeps my drone batteries topped up in remote locations.”</p>
++            <cite>Ravi P., Drone Filmmaker</cite>
++          </blockquote>
++          <blockquote class="card testimonial">
++            <p>“TRY-O chargers finally match my brand aesthetic. Clients always ask where I got them.”</p>
++            <cite>Avery M., Creative Director</cite>
++          </blockquote>
++        </div>
++      </div>
++    </section>
++
++    <section class="alt">
++      <div class="container" style="display: grid; gap: 24px;">
++        <div class="section-heading">
++          <h2>Stay charged with TRY-O updates</h2>
++          <p>Sign up to receive limited drops, design collabs, and exclusive launch alerts straight to your inbox.</p>
++        </div>
++        <form class="card" style="display: grid; gap: 18px; max-width: 420px;">
++          <label for="signup-email">Email address</label>
++          <input id="signup-email" type="email" placeholder="you@example.com" required />
++          <button class="btn" type="submit">Sign Up</button>
++          <p class="muted" style="margin: 0;">We respect your inbox. Expect no more than two drops per month.</p>
++        </form>
++      </div>
++    </section>
++
++    <section>
++      <div class="container">
++        <div class="section-heading">
++          <h2>FAQ</h2>
++          <p>Got questions? We’ve gathered the essentials to help you shop with confidence.</p>
++        </div>
++        <div class="faq">
++          <article class="faq-item card" data-faq-item>
++            <div style="display: flex; justify-content: space-between; align-items: center;">
++              <h3 style="margin: 0;">How fast is TRY-O shipping?</h3>
++              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
++            </div>
++            <p class="faq-answer" hidden>Most U.S. cities receive orders in 2–4 days thanks to regional warehouses and our trusted drop shipping network.</p>
++          </article>
++          <article class="faq-item card" data-faq-item>
++            <div style="display: flex; justify-content: space-between; align-items: center;">
++              <h3 style="margin: 0;">Do the chargers have safety certifications?</h3>
++              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
++            </div>
++            <p class="faq-answer" hidden>Every TRY-O charger includes UL, CE, and FCC certifications along with smart temperature regulation.</p>
++          </article>
++          <article class="faq-item card" data-faq-item>
++            <div style="display: flex; justify-content: space-between; align-items: center;">
++              <h3 style="margin: 0;">What if I need bulk pricing?</h3>
++              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
++            </div>
++            <p class="faq-answer" hidden>Contact us for a tailored wholesale quote—TRY-O supports agencies, teams, and events with flexible terms.</p>
++          </article>
++        </div>
++      </div>
++    </section>
++
++    <section class="alt">
++      <div class="container">
++        <div class="section-heading">
++          <h2>Benefits of shopping TRY-O</h2>
++          <p>Charging products that are as thoughtful as the people who use them.</p>
++        </div>
++        <div class="card-grid features-grid">
++          <article class="card">
++            <h3>Fast shipping</h3>
++            <p>Strategic warehouses in major cities cut delivery times to as little as 48 hours.</p>
++          </article>
++          <article class="card">
++            <h3>Secure payment</h3>
++            <p>Encrypted checkout with support for Apple Pay, Google Pay, and all major cards.</p>
++          </article>
++          <article class="card">
++            <h3>Quality assurance</h3>
++            <p>Every charger runs through a 36-point inspection, ensuring long-term durability.</p>
++          </article>
++        </div>
++      </div>
++    </section>
++  </main>
++
++  <footer class="footer">
++    <div class="container footer-grid">
++      <div>
++        <img src="assets/logo.svg" alt="TRY-O logo" style="width: 140px;" />
++        <p class="muted">TRY-O delivers rechargeable chargers for the fast-paced urban lifestyle—designed with monochrome elegance and engineered for performance.</p>
++      </div>
++      <div class="footer-nav">
++        <strong>Navigate</strong>
++        <a href="index.html">Home</a>
++        <a href="products.html">Products</a>
++        <a href="product.html">Product Spotlight</a>
++        <a href="about.html">About</a>
++        <a href="contact.html">Contact</a>
++      </div>
++      <div class="footer-contact">
++        <strong>Contact</strong>
++        <span>Email: hello@tryo.energy</span>
++        <span>Phone: +1 (718) 555-2040</span>
++        <span>Location: Brooklyn, NY</span>
++      </div>
++    </div>
++    <div class="container">
++      <small>© <span id="year">2024</span> TRY-O. All rights reserved.</small>
++    </div>
++  </footer>
++  <script src="js/main.js" defer></script>
++</body>
++</html>
+ 
+EOF
+)
