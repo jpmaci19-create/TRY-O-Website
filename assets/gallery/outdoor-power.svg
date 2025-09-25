@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050505" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    <style>
+      .label { font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; fill: #f5f5f5; }
+      .title { font-size: 62px; font-weight: 700; text-transform: uppercase; }
+      .subtitle { font-size: 30px; font-weight: 600; fill: #9ae83b; }
+      .body { font-size: 24px; fill: #d0d0d0; }
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <text class="label subtitle" x="120" y="160">10000 mAh Outdoor Power Bank</text>
+  <text class="label body" x="120" y="220">Gran capacidad de 10000 mAh</text>
+  <text class="label body" x="120" y="260">Carga solar</text>
+  <text class="label body" x="120" y="300">Iluminación LED dual</text>
+  <text class="label body" x="120" y="340">Anillo colgante</text>
+  <text class="label body" x="120" y="380">Carga rápida de 15 W</text>
+  <text class="label body" x="120" y="420">Linternas de 3 modos</text>
+  <rect x="600" y="200" width="320" height="460" rx="60" fill="#101010" stroke="#3a3a3a" stroke-width="8" />
+  <rect x="640" y="240" width="240" height="380" rx="46" fill="#171717" />
+  <rect x="660" y="280" width="200" height="160" rx="30" fill="#212121" />
+  <circle cx="760" cy="600" r="32" fill="#ffef5c" />
+  <rect x="930" y="260" width="100" height="320" rx="50" fill="#151515" stroke="#ff7f27" stroke-width="8" />
+  <circle cx="980" cy="360" r="32" fill="#ffef5c" />
+  <circle cx="980" cy="440" r="32" fill="#ffef5c" />
+</svg>
