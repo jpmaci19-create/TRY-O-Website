@@ -32,9 +32,9 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" style="--hero-background: url('assets/gallery/outdoor-power.svg');">
       <div class="container hero-inner">
-        <div class="hero-copy reveal">
+        <div class="hero-copy reveal" data-reveal="up">
           <span class="tag">Energía urbana portátil</span>
           <h1>SolarGuard 10K: potencia confiable para la ciudad y la aventura</h1>
           <p>
@@ -46,15 +46,65 @@
             <a class="btn secondary" href="products.html">Explorar catálogo</a>
           </div>
         </div>
-        <div class="hero-visual reveal">
-          <img src="assets/gallery/colorways.svg" alt="TRY-O SolarGuard 10K en colores naranja, azul y negro">
+        <div class="hero-visual reveal" data-reveal="right" data-color-group>
+          <div class="media-frame">
+            <img
+              src="assets/gallery/solar-bank.svg"
+              alt="SolarGuard 10K color naranja sobre mesa minimalista"
+              data-color-display="hero"
+            >
+          </div>
+          <div class="color-selector" role="radiogroup" aria-label="Selecciona el color del SolarGuard 10K">
+            <button
+              class="color-option is-active"
+              type="button"
+              data-color-option
+              data-target="hero"
+              data-color="orange"
+              data-image="assets/gallery/solar-bank.svg"
+              data-alt="SolarGuard 10K en color naranja"
+              aria-label="Naranja"
+              aria-pressed="true"
+            >
+              <span class="color-swatch" style="--swatch-color:#ff6b35"></span>
+              <span>Naranja</span>
+            </button>
+            <button
+              class="color-option"
+              type="button"
+              data-color-option
+              data-target="hero"
+              data-color="blue"
+              data-image="assets/gallery/10000mah-multi.svg"
+              data-alt="SolarGuard 10K en color azul"
+              aria-label="Azul"
+              aria-pressed="false"
+            >
+              <span class="color-swatch" style="--swatch-color:#3f8cff"></span>
+              <span>Azul</span>
+            </button>
+            <button
+              class="color-option"
+              type="button"
+              data-color-option
+              data-target="hero"
+              data-color="black"
+              data-image="assets/gallery/10000mah-emergency.svg"
+              data-alt="SolarGuard 10K en color negro"
+              aria-label="Negro"
+              aria-pressed="false"
+            >
+              <span class="color-swatch" style="--swatch-color:#111217"></span>
+              <span>Negro</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
           <span>Características clave</span>
           <h2>Diseñado para movilidad, seguridad y estilo</h2>
           <p>
@@ -63,28 +113,28 @@
           </p>
         </div>
         <div class="features-grid">
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="left">
             <div class="feature-icon">
               <img src="assets/gallery/solar-usb.svg" alt="Icono de carga solar y USB">
             </div>
             <h3>Híbrido solar + USB-C</h3>
             <p>Panel fotovoltaico y carga rápida 5V/2.1A para recuperar energía en minutos, incluso en movimiento.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="right">
             <div class="feature-icon">
               <img src="assets/gallery/double-led.svg" alt="Icono de linterna dual">
             </div>
             <h3>Iluminación dual</h3>
             <p>Tres modos de linterna ultra brillante para emergencias nocturnas, camping o cortes de energía.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="left">
             <div class="feature-icon">
               <img src="assets/gallery/waterproof.svg" alt="Icono de resistencia al agua">
             </div>
             <h3>Listo para exteriores</h3>
             <p>Certificación IPX4 y carcasa antigolpes que resiste lluvia ligera, polvo urbano y aventuras todoterreno.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="right">
             <div class="feature-icon">
               <img src="assets/gallery/safety-guarantee.svg" alt="Icono de seguridad">
             </div>
@@ -97,7 +147,7 @@
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
           <span>Catálogo TRY-O</span>
           <h2>Un único dispositivo, tres expresiones</h2>
           <p>
@@ -106,9 +156,11 @@
           </p>
         </div>
         <div class="catalog-grid">
-          <article class="product-card reveal">
-            <img src="assets/gallery/solar-bank.svg" alt="SolarGuard 10K naranja con panel solar">
-            <div>
+          <article class="product-card reveal is-active" data-variant-card="orange" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/solar-bank.svg" alt="SolarGuard 10K naranja con panel solar">
+            </div>
+            <div class="product-card-body">
               <h3>SolarGuard 10K Naranja</h3>
               <p>Carga solar ultrarrápida y cordón portátil para salidas al aire libre.</p>
               <div class="product-meta">
@@ -122,9 +174,11 @@
             </div>
             <a class="btn secondary" href="product.html">Ver detalles</a>
           </article>
-          <article class="product-card reveal">
-            <img src="assets/gallery/outdoor-power.svg" alt="SolarGuard 10K azul en exteriores">
-            <div>
+          <article class="product-card reveal" data-variant-card="blue" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/outdoor-power.svg" alt="SolarGuard 10K azul en exteriores">
+            </div>
+            <div class="product-card-body">
               <h3>SolarGuard 10K Azul</h3>
               <p>Estética urbana y múltiples salidas para alimentar más de un dispositivo a la vez.</p>
               <div class="product-meta">
@@ -138,9 +192,11 @@
             </div>
             <a class="btn secondary" href="product.html">Ver detalles</a>
           </article>
-          <article class="product-card reveal">
-            <img src="assets/gallery/10000mah-emergency.svg" alt="SolarGuard 10K negro con luces LED">
-            <div>
+          <article class="product-card reveal" data-variant-card="black" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/10000mah-emergency.svg" alt="SolarGuard 10K negro con luces LED">
+            </div>
+            <div class="product-card-body">
               <h3>SolarGuard 10K Negro</h3>
               <p>Acabado monocromático con linterna dual y protección total contra sobrecargas.</p>
               <div class="product-meta">
@@ -160,7 +216,7 @@
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
           <span>Testimonios TRY-O</span>
           <h2>Usuarios que ya confían en SolarGuard 10K</h2>
           <p>
@@ -168,7 +224,7 @@
           </p>
         </div>
         <div class="testimonials">
-          <article class="testimonial-card reveal">
+          <article class="testimonial-card reveal" data-reveal="left">
             <div class="testimonial-author">
               <strong>Sofía · Guía turística</strong>
               <span>Ciudad de México</span>
@@ -178,7 +234,7 @@
               y la linterna doble ha sido esencial para emergencias.”
             </p>
           </article>
-          <article class="testimonial-card reveal">
+          <article class="testimonial-card reveal" data-reveal="up">
             <div class="testimonial-author">
               <strong>Marcos · Fotógrafo urbano</strong>
               <span>Buenos Aires</span>
@@ -187,7 +243,7 @@
               “Me encanta el diseño minimalista. No desentona con mi equipo y puedo cargar cámaras, gimbals y el smartphone sin cables extra.”
             </p>
           </article>
-          <article class="testimonial-card reveal">
+          <article class="testimonial-card reveal" data-reveal="right">
             <div class="testimonial-author">
               <strong>Ana · Arquitecta</strong>
               <span>Madrid</span>
@@ -201,7 +257,7 @@
     </section>
 
     <section>
-      <div class="container cta-panel reveal">
+      <div class="container cta-panel reveal" data-reveal="up">
         <h2>Prepárate para cualquier jornada con TRY-O</h2>
         <p>
           Simplifica tu mochila y mantente siempre conectado. Compra hoy mismo o escríbenos para coordinar pedidos corporativos y personalizados.

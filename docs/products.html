@@ -32,9 +32,9 @@
   </header>
 
   <main>
-    <section class="hero" style="min-height:auto; padding-top:120px; padding-bottom:80px;">
+    <section class="hero" style="min-height:auto; padding-top:120px; padding-bottom:80px; --hero-background: url('assets/gallery/backpack-carry.svg');">
       <div class="container hero-inner">
-        <div class="hero-copy reveal">
+        <div class="hero-copy reveal" data-reveal="up">
           <span class="tag">Colección 2024</span>
           <h1>Explora la familia SolarGuard 10K</h1>
           <p>
@@ -48,28 +48,32 @@
             <span class="badge">IPX4</span>
           </div>
         </div>
-        <div class="hero-visual reveal">
-          <img src="assets/gallery/solar-bank.svg" alt="SolarGuard 10K sobre superficie minimalista">
+        <div class="hero-visual reveal" data-reveal="right">
+          <div class="media-frame">
+            <img src="assets/gallery/solar-bank.svg" alt="SolarGuard 10K sobre superficie minimalista">
+          </div>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
           <span>Encuentra tu estilo</span>
           <h2>Busca por color, uso o accesorio</h2>
           <p>Utiliza la barra de búsqueda para filtrar por características como “naranja”, “outdoor”, “linterna” o “USB-C”.</p>
         </div>
-        <div class="search-bar reveal">
+        <div class="search-bar reveal" data-reveal="up">
           <label class="sr-only" for="productSearch">Buscar productos</label>
           <input id="productSearch" type="search" placeholder="Buscar en TRY-O" data-product-search>
           <button class="btn secondary" type="button" id="clearSearch">Limpiar</button>
         </div>
         <div class="catalog-grid" id="productGrid">
-          <article class="product-card reveal" data-product-card data-keywords="solarguard naranja exterior outdoor cordon solar rapida">
-            <img src="assets/gallery/outdoor-power.svg" alt="SolarGuard 10K naranja en exterior">
-            <div>
+          <article class="product-card reveal is-active" data-product-card data-variant-card="orange" data-keywords="solarguard naranja exterior outdoor cordon solar rapida" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/outdoor-power.svg" alt="SolarGuard 10K naranja en exterior">
+            </div>
+            <div class="product-card-body">
               <h3>SolarGuard 10K · Naranja</h3>
               <p>Cáscara texturizada para máximo agarre y cordón de transporte para aventuras outdoor.</p>
               <div class="product-meta">
@@ -79,9 +83,11 @@
             </div>
             <a class="btn" href="product.html">Comprar</a>
           </article>
-          <article class="product-card reveal" data-product-card data-keywords="solarguard azul urbano oficina usb-c multitarea">
-            <img src="assets/gallery/10000mah-multi.svg" alt="SolarGuard 10K azul cargando múltiples dispositivos">
-            <div>
+          <article class="product-card reveal" data-product-card data-variant-card="blue" data-keywords="solarguard azul urbano oficina usb-c multitarea" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/10000mah-multi.svg" alt="SolarGuard 10K azul cargando múltiples dispositivos">
+            </div>
+            <div class="product-card-body">
               <h3>SolarGuard 10K · Azul</h3>
               <p>Estilo urbano con doble salida USB y compatibilidad con tablets, cámaras y audífonos.</p>
               <div class="product-meta">
@@ -91,9 +97,11 @@
             </div>
             <a class="btn" href="product.html">Comprar</a>
           </article>
-          <article class="product-card reveal" data-product-card data-keywords="solarguard negro profesional seguridad linterna ipx4">
-            <img src="assets/gallery/10000mah-emergency.svg" alt="SolarGuard 10K negro con linterna">
-            <div>
+          <article class="product-card reveal" data-product-card data-variant-card="black" data-keywords="solarguard negro profesional seguridad linterna ipx4" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/10000mah-emergency.svg" alt="SolarGuard 10K negro con linterna">
+            </div>
+            <div class="product-card-body">
               <h3>SolarGuard 10K · Negro</h3>
               <p>Acabado monocromático elegante con foco en seguridad: linterna dual y blindaje eléctrico.</p>
               <div class="product-meta">
@@ -113,27 +121,27 @@
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
           <span>Lo que dicen los usuarios</span>
           <h2>Valoraciones reales del ecosistema TRY-O</h2>
           <p>Nuestra comunidad confía en la durabilidad y estilo del SolarGuard 10K. Conoce algunas experiencias destacadas.</p>
         </div>
         <div class="testimonials">
-          <article class="testimonial-card reveal">
+          <article class="testimonial-card reveal" data-reveal="left">
             <div class="testimonial-author">
               <strong>Diego · Repartidor</strong>
               <span>Lima</span>
             </div>
             <p>“Recorro la ciudad todo el día. Con TRY-O tengo GPS y celular activos sin parar. Me encanta la luz integrada.”</p>
           </article>
-          <article class="testimonial-card reveal">
+          <article class="testimonial-card reveal" data-reveal="up">
             <div class="testimonial-author">
               <strong>Laura · Productora</strong>
               <span>Medellín</span>
             </div>
             <p>“El color azul encaja en nuestros sets. La carga rápida ahorra tiempo entre tomas y no se recalienta.”</p>
           </article>
-          <article class="testimonial-card reveal">
+          <article class="testimonial-card reveal" data-reveal="right">
             <div class="testimonial-author">
               <strong>Iván · Diseñador</strong>
               <span>Barcelona</span>
@@ -145,7 +153,7 @@
     </section>
 
     <section>
-      <div class="container cta-panel reveal">
+      <div class="container cta-panel reveal" data-reveal="up">
         <h2>Suscríbete a las actualizaciones TRY-O</h2>
         <p>Recibe noticias sobre nuevos accesorios, promociones y colaboraciones especiales directamente en tu correo.</p>
         <form class="hero-cta" style="justify-content:center; flex-wrap:wrap; gap:12px;">
@@ -158,21 +166,21 @@
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
           <span>Preguntas frecuentes</span>
           <h2>Resuelve tus dudas antes de comprar</h2>
           <p>Si necesitas más información, escríbenos vía WhatsApp o completa el formulario de contacto.</p>
         </div>
         <div class="faq-accordion">
-          <article class="faq-item reveal">
+          <article class="faq-item reveal" data-reveal="left">
             <h3>¿Cuánto tarda en cargarse completamente el SolarGuard 10K?</h3>
             <p>En modo USB-C tarda entre 3 y 4 horas. Bajo luz solar directa alcanza el 100% en aproximadamente 8 horas.</p>
           </article>
-          <article class="faq-item reveal">
+          <article class="faq-item reveal" data-reveal="up">
             <h3>¿Cuántos dispositivos puedo cargar a la vez?</h3>
             <p>Hasta tres: dos puertos USB-A y un USB-C, con distribución inteligente para evitar sobrecalentamiento.</p>
           </article>
-          <article class="faq-item reveal">
+          <article class="faq-item reveal" data-reveal="right">
             <h3>¿Ofrecen envíos internacionales?</h3>
             <p>Sí, entregamos en toda América y Europa con seguimiento en tiempo real y empaques 100% reciclables.</p>
           </article>
@@ -182,7 +190,7 @@
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
           <span>Beneficios TRY-O</span>
           <h2>Ventajas de comprar directamente con nosotros</h2>
           <p>
@@ -190,19 +198,19 @@
           </p>
         </div>
         <div class="features-grid">
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="left">
             <h3>Envío express</h3>
             <p>Despacho en menos de 24 horas dentro de la ciudad y logística planificada para envíos internacionales.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="right">
             <h3>Pago seguro</h3>
             <p>Procesamos tarjetas, billeteras digitales y transferencias con encriptación bancaria de extremo a extremo.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="left">
             <h3>Garantía ampliada</h3>
             <p>Cobertura de 18 meses con reemplazo inmediato ante defectos de fábrica o pérdida de capacidad.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="right">
             <h3>Soporte experto</h3>
             <p>Equipo técnico 24/7 para asesorarte en instalación, mantenimiento y personalización corporativa.</p>
           </article>

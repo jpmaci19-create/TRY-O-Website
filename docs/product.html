@@ -32,9 +32,9 @@
   </header>
 
   <main>
-    <section class="hero" style="min-height:auto; padding-top:120px; padding-bottom:80px;">
+    <section class="hero" style="min-height:auto; padding-top:120px; padding-bottom:80px; --hero-background: url('assets/gallery/10000mah-emergency.svg');">
       <div class="container hero-inner">
-        <div class="hero-copy reveal">
+        <div class="hero-copy reveal" data-reveal="up">
           <span class="tag">Producto destacado</span>
           <h1>SolarGuard 10K</h1>
           <p>
@@ -48,33 +48,137 @@
             <span class="badge">$30 USD</span>
           </div>
         </div>
-        <div class="hero-visual reveal">
-          <img src="assets/gallery/dimensions.svg" alt="Dimensiones del SolarGuard 10K">
+        <div class="hero-visual reveal" data-reveal="right" data-color-group>
+          <div class="media-frame">
+            <img
+              src="assets/gallery/solar-bank.svg"
+              alt="Dimensiones del SolarGuard 10K en color naranja"
+              data-color-display="product"
+            >
+          </div>
+          <div class="color-selector" role="radiogroup" aria-label="Selecciona el color del SolarGuard 10K">
+            <button
+              class="color-option is-active"
+              type="button"
+              data-color-option
+              data-target="product"
+              data-color="orange"
+              data-image="assets/gallery/solar-bank.svg"
+              data-alt="SolarGuard 10K color naranja con cordón portátil"
+              aria-label="Naranja"
+              aria-pressed="true"
+            >
+              <span class="color-swatch" style="--swatch-color:#ff6b35"></span>
+              <span>Naranja</span>
+            </button>
+            <button
+              class="color-option"
+              type="button"
+              data-color-option
+              data-target="product"
+              data-color="blue"
+              data-image="assets/gallery/10000mah-multi.svg"
+              data-alt="SolarGuard 10K color azul conectando múltiples dispositivos"
+              aria-label="Azul"
+              aria-pressed="false"
+            >
+              <span class="color-swatch" style="--swatch-color:#3f8cff"></span>
+              <span>Azul</span>
+            </button>
+            <button
+              class="color-option"
+              type="button"
+              data-color-option
+              data-target="product"
+              data-color="black"
+              data-image="assets/gallery/10000mah-emergency.svg"
+              data-alt="SolarGuard 10K color negro con linterna dual"
+              aria-label="Negro"
+              aria-pressed="false"
+            >
+              <span class="color-swatch" style="--swatch-color:#111217"></span>
+              <span>Negro</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
+          <span>Colorways TRY-O</span>
+          <h2>Selecciona tu acabado favorito</h2>
+          <p>Compara cada variante para identificar la combinación ideal entre estética y funcionalidad.</p>
+        </div>
+        <div class="catalog-grid">
+          <article class="product-card reveal is-active" data-variant-card="orange" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/solar-bank.svg" alt="Vista frontal del SolarGuard 10K naranja">
+            </div>
+            <div class="product-card-body">
+              <h3>SolarGuard 10K · Naranja</h3>
+              <p>La opción outdoor con acabado de alto contraste y cordón reflectante.</p>
+              <div class="product-meta">
+                <span>$30 USD</span>
+                <span>Stock inmediato</span>
+              </div>
+            </div>
+            <a class="btn" href="contact.html">Elegir este color</a>
+          </article>
+          <article class="product-card reveal" data-variant-card="blue" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/10000mah-multi.svg" alt="Vista frontal del SolarGuard 10K azul">
+            </div>
+            <div class="product-card-body">
+              <h3>SolarGuard 10K · Azul</h3>
+              <p>Perfil urbano con acabado mate y compatibilidad total con accesorios creativos.</p>
+              <div class="product-meta">
+                <span>$30 USD</span>
+                <span>Entrega 24h</span>
+              </div>
+            </div>
+            <a class="btn" href="contact.html">Elegir este color</a>
+          </article>
+          <article class="product-card reveal" data-variant-card="black" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/10000mah-emergency.svg" alt="Vista frontal del SolarGuard 10K negro">
+            </div>
+            <div class="product-card-body">
+              <h3>SolarGuard 10K · Negro</h3>
+              <p>Estética monocromática que destaca en entornos profesionales y nocturnos.</p>
+              <div class="product-meta">
+                <span>$30 USD</span>
+                <span>Garantía extendida</span>
+              </div>
+            </div>
+            <a class="btn" href="contact.html">Elegir este color</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
           <span>Descripción completa</span>
           <h2>Todo lo que incluye tu SolarGuard 10K</h2>
           <p>Un diseño equilibrado entre estética urbana y funcionalidad profesional para que nunca te quedes sin energía.</p>
         </div>
         <div class="features-grid">
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="left">
             <h3>Panel solar monocristalino</h3>
             <p>Recarga ecológica en exteriores, con una eficiencia del 24% y protección contra rayos UV.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="right">
             <h3>Triple salida USB</h3>
             <p>Dos puertos USB-A y uno USB-C con balance inteligente para cargar hasta tres dispositivos en paralelo.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="left">
             <h3>Linterna dual ultrabrillante</h3>
             <p>Tres modos: estándar, SOS y estroboscópico, con autonomía de 70 horas de iluminación continua.</p>
           </article>
-          <article class="feature-card reveal">
+          <article class="feature-card reveal" data-reveal="right">
             <h3>Resistencia IPX4</h3>
             <p>Carcasa reforzada, esquinas amortiguadas y sellado contra salpicaduras para ambientes exigentes.</p>
           </article>
@@ -84,27 +188,27 @@
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
           <span>Opiniones del producto</span>
           <h2>Clientes que confían en SolarGuard 10K</h2>
           <p>El 96% de los usuarios califica el dispositivo con 5 estrellas gracias a su desempeño y durabilidad.</p>
         </div>
         <div class="testimonials">
-          <article class="testimonial-card reveal">
+          <article class="testimonial-card reveal" data-reveal="left">
             <div class="testimonial-author">
               <strong>Camila · Ingeniera</strong>
               <span>Santiago</span>
             </div>
             <p>“Lo uso en terreno y la batería se mantiene estable incluso con frío intenso. El cordón es comodísimo.”</p>
           </article>
-          <article class="testimonial-card reveal">
+          <article class="testimonial-card reveal" data-reveal="up">
             <div class="testimonial-author">
               <strong>Joel · DJ</strong>
               <span>Monterrey</span>
             </div>
             <p>“Siempre tengo mis controladores listos. Lo cargo durante el día con el panel solar y por la noche me salva.”</p>
           </article>
-          <article class="testimonial-card reveal">
+          <article class="testimonial-card reveal" data-reveal="right">
             <div class="testimonial-author">
               <strong>Natalia · Arquitecta</strong>
               <span>Valencia</span>
@@ -116,7 +220,7 @@
     </section>
 
     <section>
-      <div class="container cta-panel reveal">
+      <div class="container cta-panel reveal" data-reveal="up">
         <h2>Lleva el SolarGuard 10K a tu próxima aventura</h2>
         <p>Disponible por $30 USD. Envío express, pago seguro y garantía extendida de 18 meses en todos los pedidos.</p>
         <div class="hero-cta" style="justify-content:center;">
@@ -128,25 +232,25 @@
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
           <span>Reseñas detalladas</span>
           <h2>Experiencias con imágenes reales</h2>
           <p>Compartimos testimonios con fotos para que visualices el SolarGuard 10K en distintos contextos.</p>
         </div>
         <div class="reviews-grid">
-          <article class="review-card reveal">
+          <article class="review-card reveal" data-reveal="left">
             <h4>Ideal para viajes de trekking</h4>
             <span>5 ★★★★★ · Abril 2024</span>
             <img src="assets/gallery/outdoor-power.svg" alt="SolarGuard 10K en excursión">
             <p>“Lo colgué de mi mochila durante un trekking de tres días. Siempre tuve batería para el GPS y mi cámara.”</p>
           </article>
-          <article class="review-card reveal">
+          <article class="review-card reveal" data-reveal="up">
             <h4>Oficina y afterwork</h4>
             <span>4.5 ★★★★☆ · Marzo 2024</span>
             <img src="assets/gallery/solar-usb.svg" alt="SolarGuard 10K sobre escritorio">
             <p>“En la oficina cargo mi laptop y audífonos. De noche lo llevo a eventos y la linterna hace la diferencia.”</p>
           </article>
-          <article class="review-card reveal">
+          <article class="review-card reveal" data-reveal="right">
             <h4>Seguridad para el hogar</h4>
             <span>5 ★★★★★ · Febrero 2024</span>
             <img src="assets/gallery/10000mah-emergency.svg" alt="SolarGuard 10K iluminando un hogar">
@@ -158,25 +262,25 @@
 
     <section>
       <div class="container">
-        <div class="section-header reveal">
+        <div class="section-header reveal" data-reveal="up">
           <span>Inversión transparente</span>
           <h2>Planes y precios</h2>
           <p>Selecciona la opción que mejor se adapte a tu necesidad, ya sea individual o para equipos completos.</p>
         </div>
         <div class="pricing-table">
-          <article class="price-card reveal">
+          <article class="price-card reveal" data-reveal="left">
             <h3>Individual</h3>
             <strong>$30 USD</strong>
             <p>Incluye cable USB-C, guía rápida y garantía de 18 meses.</p>
             <a class="btn secondary" href="contact.html">Comprar</a>
           </article>
-          <article class="price-card reveal">
+          <article class="price-card reveal" data-reveal="up">
             <h3>Pack 5 unidades</h3>
             <strong>$135 USD</strong>
             <p>Ideal para equipos de trabajo. Incluye asesoría de configuración y envío gratuito.</p>
             <a class="btn secondary" href="contact.html">Solicitar cotización</a>
           </article>
-          <article class="price-card reveal">
+          <article class="price-card reveal" data-reveal="right">
             <h3>Corporativo</h3>
             <strong>Desde $500 USD</strong>
             <p>Personalización con logo, sesiones de capacitación y soporte dedicado 24/7.</p>
