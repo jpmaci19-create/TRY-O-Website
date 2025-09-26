@@ -1,49 +1,69 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
 
 if (navToggle && navLinks) {
   navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
   });
+
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 }
 
-const searchForm = document.querySelector('[data-product-search]');
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.18 }
+);
 
-if (searchForm) {
-  const input = searchForm.querySelector('input');
-  const cards = document.querySelectorAll('[data-product-card]');
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-  searchForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+const searchInput = document.querySelector('[data-product-search]');
+const clearSearch = document.getElementById('clearSearch');
+const productCards = document.querySelectorAll('[data-product-card]');
+const emptyState = document.getElementById('emptyState');
+
+function updateProductVisibility() {
+  const term = (searchInput?.value || '').toLowerCase().trim();
+
+  if (!productCards.length) return;
+
+  let visibleCount = 0;
+  productCards.forEach((card) => {
+    const keywords = (card.dataset.keywords || '').toLowerCase();
+    const matches = !term || keywords.includes(term);
+    card.hidden = !matches;
+    if (matches) {
+      visibleCount += 1;
+    }
   });
 
-  if (input) {
-    input.addEventListener('input', () => {
-      const query = input.value.trim().toLowerCase();
-      cards.forEach((card) => {
-        const text = card.textContent.toLowerCase();
-        card.style.display = text.includes(query) ? '' : 'none';
-      });
-    });
+  if (emptyState) {
+    emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
   }
 }
 
-const faqItems = document.querySelectorAll('[data-faq-item]');
-
-faqItems.forEach((item) => {
-  const question = item.querySelector('button');
-  const answer = item.querySelector('.faq-answer');
-  if (!question || !answer) return;
-
-  question.addEventListener('click', () => {
-    const expanded = question.getAttribute('aria-expanded') === 'true';
-    question.setAttribute('aria-expanded', String(!expanded));
-    answer.hidden = expanded;
-  });
-});
-
-const yearField = document.getElementById('year');
-if (yearField) {
-  yearField.textContent = new Date().getFullYear();
+if (searchInput) {
+  searchInput.addEventListener('input', updateProductVisibility);
 }
+
+if (clearSearch && searchInput) {
+  clearSearch.addEventListener('click', () => {
+    searchInput.value = '';
+    updateProductVisibility();
+    searchInput.focus();
+  });
+}
+
+updateProductVisibility();

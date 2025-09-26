@@ -1,236 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TRY-O Productos | SolarGuard 10K</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRY-O | Catálogo de cargadores solares</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
     <div class="container navbar">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/logo.svg" alt="TRY-O logo" />
+        <img src="assets/logo.svg" alt="TRY-O logo">
+        <span>TRY-O</span>
       </a>
-      <nav>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-        <div id="primary-navigation" class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
-          <a href="product.html">SolarGuard 10K</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact</a>
-        </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="products.html" class="active">Productos</a>
+        <a href="product.html">SolarGuard 10K</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
       </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
   <main>
-    <section>
-      <div class="container" style="display: grid; gap: 32px;">
-        <div class="section-heading">
-          <h1>Descubre el TRY-O SolarGuard 10K</h1>
-          <p>El único producto que necesitas: una batería solar portátil de 10,000&nbsp;mAh con carga rápida, linterna dual y acabados premium. Busca detalles específicos o contáctanos para pedidos al por mayor.</p>
+    <section class="hero" style="min-height:auto; padding-top:120px; padding-bottom:80px;">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="tag">Colección 2024</span>
+          <h1>Explora la familia SolarGuard 10K</h1>
+          <p>
+            Un catálogo curado con la misma batería portátil en tres expresiones. Cada variante mantiene el panel solar integrado,
+            la doble linterna y el ecosistema TRY-O de accesorios urbanos.
+          </p>
+          <div class="badge-list">
+            <span class="badge">10&nbsp;000 mAh</span>
+            <span class="badge">Carga rápida 5V 2.1A</span>
+            <span class="badge">Cordón portátil</span>
+            <span class="badge">IPX4</span>
+          </div>
         </div>
-        <form class="search-bar" data-product-search>
-          <label class="sr-only" for="product-search">Buscar en TRY-O</label>
-          <input id="product-search" type="search" name="q" placeholder="Buscar especificaciones, funciones o colores" />
-          <button type="submit">Buscar</button>
+        <div class="hero-visual reveal">
+          <img src="assets/gallery/solar-bank.svg" alt="SolarGuard 10K sobre superficie minimalista">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span>Encuentra tu estilo</span>
+          <h2>Busca por color, uso o accesorio</h2>
+          <p>Utiliza la barra de búsqueda para filtrar por características como “naranja”, “outdoor”, “linterna” o “USB-C”.</p>
+        </div>
+        <div class="search-bar reveal">
+          <label class="sr-only" for="productSearch">Buscar productos</label>
+          <input id="productSearch" type="search" placeholder="Buscar en TRY-O" data-product-search>
+          <button class="btn secondary" type="button" id="clearSearch">Limpiar</button>
+        </div>
+        <div class="catalog-grid" id="productGrid">
+          <article class="product-card reveal" data-product-card data-keywords="solarguard naranja exterior outdoor cordon solar rapida">
+            <img src="assets/gallery/outdoor-power.svg" alt="SolarGuard 10K naranja en exterior">
+            <div>
+              <h3>SolarGuard 10K · Naranja</h3>
+              <p>Cáscara texturizada para máximo agarre y cordón de transporte para aventuras outdoor.</p>
+              <div class="product-meta">
+                <span>$30 USD</span>
+                <span>Stock inmediato</span>
+              </div>
+            </div>
+            <a class="btn" href="product.html">Comprar</a>
+          </article>
+          <article class="product-card reveal" data-product-card data-keywords="solarguard azul urbano oficina usb-c multitarea">
+            <img src="assets/gallery/10000mah-multi.svg" alt="SolarGuard 10K azul cargando múltiples dispositivos">
+            <div>
+              <h3>SolarGuard 10K · Azul</h3>
+              <p>Estilo urbano con doble salida USB y compatibilidad con tablets, cámaras y audífonos.</p>
+              <div class="product-meta">
+                <span>$30 USD</span>
+                <span>Entrega en 24h</span>
+              </div>
+            </div>
+            <a class="btn" href="product.html">Comprar</a>
+          </article>
+          <article class="product-card reveal" data-product-card data-keywords="solarguard negro profesional seguridad linterna ipx4">
+            <img src="assets/gallery/10000mah-emergency.svg" alt="SolarGuard 10K negro con linterna">
+            <div>
+              <h3>SolarGuard 10K · Negro</h3>
+              <p>Acabado monocromático elegante con foco en seguridad: linterna dual y blindaje eléctrico.</p>
+              <div class="product-meta">
+                <span>$30 USD</span>
+                <span>Garantía 18 meses</span>
+              </div>
+            </div>
+            <a class="btn" href="product.html">Comprar</a>
+          </article>
+        </div>
+        <div class="empty-state" id="emptyState">
+          <h3>Sin resultados</h3>
+          <p>No encontramos coincidencias. Prueba con otro término como “solar”, “linterna” o “negro”.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span>Lo que dicen los usuarios</span>
+          <h2>Valoraciones reales del ecosistema TRY-O</h2>
+          <p>Nuestra comunidad confía en la durabilidad y estilo del SolarGuard 10K. Conoce algunas experiencias destacadas.</p>
+        </div>
+        <div class="testimonials">
+          <article class="testimonial-card reveal">
+            <div class="testimonial-author">
+              <strong>Diego · Repartidor</strong>
+              <span>Lima</span>
+            </div>
+            <p>“Recorro la ciudad todo el día. Con TRY-O tengo GPS y celular activos sin parar. Me encanta la luz integrada.”</p>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-author">
+              <strong>Laura · Productora</strong>
+              <span>Medellín</span>
+            </div>
+            <p>“El color azul encaja en nuestros sets. La carga rápida ahorra tiempo entre tomas y no se recalienta.”</p>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-author">
+              <strong>Iván · Diseñador</strong>
+              <span>Barcelona</span>
+            </div>
+            <p>“Minimalista y poderoso. El acabado negro combina con mi setup y la garantía extendida da tranquilidad.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container cta-panel reveal">
+        <h2>Suscríbete a las actualizaciones TRY-O</h2>
+        <p>Recibe noticias sobre nuevos accesorios, promociones y colaboraciones especiales directamente en tu correo.</p>
+        <form class="hero-cta" style="justify-content:center; flex-wrap:wrap; gap:12px;">
+          <label class="sr-only" for="newsletter">Correo electrónico</label>
+          <input id="newsletter" type="email" placeholder="tuemail@ejemplo.com" required>
+          <button class="btn" type="submit">Quiero suscribirme</button>
         </form>
       </div>
     </section>
 
-    <section class="alt">
+    <section>
       <div class="container">
-        <div class="card-grid product-grid single-product-grid">
-          <article class="card product-card" data-product-card>
-            <img src="assets/gallery/outdoor-power.svg" alt="TRY-O SolarGuard 10K power bank" />
-            <h3>TRY-O SolarGuard 10K</h3>
-            <p class="muted">Batería solar de 10,000&nbsp;mAh con doble linterna LED, cordón portátil y carga rápida USB/Type-C.</p>
-            <div class="color-swatches" aria-label="Opciones de color">
-              <span class="swatch" data-color="Naranja" style="--swatch-color: #f97316"></span>
-              <span class="swatch" data-color="Azul" style="--swatch-color: #2563eb"></span>
-              <span class="swatch" data-color="Negro" style="--swatch-color: #0f172a"></span>
-              <span class="swatch-label">Orange · Blue · Black</span>
-            </div>
-            <footer>
-              <strong>$30 USD</strong>
-              <a class="btn secondary" href="product.html">Ver producto</a>
-            </footer>
+        <div class="section-header reveal">
+          <span>Preguntas frecuentes</span>
+          <h2>Resuelve tus dudas antes de comprar</h2>
+          <p>Si necesitas más información, escríbenos vía WhatsApp o completa el formulario de contacto.</p>
+        </div>
+        <div class="faq-accordion">
+          <article class="faq-item reveal">
+            <h3>¿Cuánto tarda en cargarse completamente el SolarGuard 10K?</h3>
+            <p>En modo USB-C tarda entre 3 y 4 horas. Bajo luz solar directa alcanza el 100% en aproximadamente 8 horas.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="visual-gallery">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Galería oficial SolarGuard 10K</h2>
-          <p>Explora los artes promocionales y diagramas técnicos que recibes junto con la batería portátil.</p>
-        </div>
-        <div class="image-gallery">
-          <figure class="image-card">
-            <img src="assets/gallery/colorways.svg" alt="Colorways de SolarGuard 10K" />
-            <figcaption>Tres acabados listos para tu estilo urbano: naranja, azul y negro.</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img src="assets/gallery/solar-bank.svg" alt="Infografía Solar Charge Bank" />
-            <figcaption>Panel solar integrado que convierte la luz del día en energía útil en cualquier lugar.</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img src="assets/gallery/double-led.svg" alt="Gráfico de linterna doble" />
-            <figcaption>Linterna dual con modos Steady, SOS y Strobe para mantenerte seguro.</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img src="assets/gallery/safety-guarantee.svg" alt="Infografía de seguridad" />
-            <figcaption>Protecciones activas contra sobrecarga, sobrecalentamiento y cortocircuitos.</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img src="assets/gallery/waterproof.svg" alt="Poster waterproof" />
-            <figcaption>Construcción resistente al agua, polvo y golpes para aventuras al aire libre.</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img src="assets/gallery/dimensions.svg" alt="Diagrama de dimensiones" />
-            <figcaption>Plano detallado con medidas, puertos y ubicaciones de indicadores LED.</figcaption>
-          </figure>
+          <article class="faq-item reveal">
+            <h3>¿Cuántos dispositivos puedo cargar a la vez?</h3>
+            <p>Hasta tres: dos puertos USB-A y un USB-C, con distribución inteligente para evitar sobrecalentamiento.</p>
+          </article>
+          <article class="faq-item reveal">
+            <h3>¿Ofrecen envíos internacionales?</h3>
+            <p>Sí, entregamos en toda América y Europa con seguimiento en tiempo real y empaques 100% reciclables.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <div class="section-heading">
-          <h2>Lo que dicen quienes ya usan SolarGuard 10K</h2>
-          <p>Compradores de distintos sectores comparten cómo el power bank se adapta a sus rutinas.</p>
+        <div class="section-header reveal">
+          <span>Beneficios TRY-O</span>
+          <h2>Ventajas de comprar directamente con nosotros</h2>
+          <p>
+            Nos enfocamos en brindar la experiencia más fluida posible, desde la compra hasta el soporte postventa.
+          </p>
         </div>
-        <div class="card-grid testimonial-grid">
-          <blockquote class="card testimonial">
-            <p>“Realicé un pedido al por mayor para mi equipo de scouts. Llegaron en tres días, cada uno precargado y con manual bilingüe.”</p>
-            <cite>Devyn K., Coordinador de eventos</cite>
-          </blockquote>
-          <blockquote class="card testimonial">
-            <p>“La linterna de tres modos nos ayudó a señalizar durante un viaje en montaña. El panel solar mantuvo mis GPS activos toda la travesía.”</p>
-            <cite>Ravi P., Guía de expediciones</cite>
-          </blockquote>
-          <blockquote class="card testimonial">
-            <p>“Los tres colores combinan con mis uniformes de staff. El precio de $30 USD permite equipar a todo el equipo sin sacrificar calidad.”</p>
-            <cite>Avery M., Directora de hospitalidad</cite>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <section class="alt">
-      <div class="container" style="display: grid; gap: 24px;">
-        <div class="section-heading">
-          <h2>Mantente al día con TRY-O</h2>
-          <p>Recibe avisos de inventario, tutoriales de uso y promociones especiales para SolarGuard 10K.</p>
-        </div>
-        <form class="card" style="display: grid; gap: 18px; max-width: 420px;">
-          <label for="signup-email">Correo electrónico</label>
-          <input id="signup-email" type="email" placeholder="tu@correo.com" required />
-          <button class="btn" type="submit">Suscribirme</button>
-          <p class="muted" style="margin: 0;">Enviamos máximo dos actualizaciones al mes. Sin spam, solo energía útil.</p>
-        </form>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-heading">
-          <h2>Preguntas frecuentes</h2>
-          <p>Resolvemos las dudas más comunes sobre la compra y el uso del TRY-O SolarGuard 10K.</p>
-        </div>
-        <div class="faq">
-          <article class="faq-item card" data-faq-item>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <h3 style="margin: 0;">¿Cuánto tarda el envío?</h3>
-              <button class="btn secondary" type="button" aria-expanded="false">Mostrar respuesta</button>
-            </div>
-            <p class="faq-answer" hidden>Despachamos en 24 horas y entregamos en 2-4 días hábiles en la mayoría de las ciudades gracias a nuestra red logística TRY-O.</p>
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <h3>Envío express</h3>
+            <p>Despacho en menos de 24 horas dentro de la ciudad y logística planificada para envíos internacionales.</p>
           </article>
-          <article class="faq-item card" data-faq-item>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <h3 style="margin: 0;">¿Puedo usarlo bajo la lluvia?</h3>
-              <button class="btn secondary" type="button" aria-expanded="false">Mostrar respuesta</button>
-            </div>
-            <p class="faq-answer" hidden>SolarGuard 10K cuenta con certificación IPX6. Resiste lluvia, salpicaduras y polvo sin comprometer su desempeño.</p>
-          </article>
-          <article class="faq-item card" data-faq-item>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <h3 style="margin: 0;">¿Incluye garantía?</h3>
-              <button class="btn secondary" type="button" aria-expanded="false">Mostrar respuesta</button>
-            </div>
-            <p class="faq-answer" hidden>Todas las compras están cubiertas por garantía de 12 meses y asistencia técnica bilingüe.</p>
-          </article>
-          <article class="faq-item card" data-faq-item>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <h3 style="margin: 0;">¿Qué opciones de pago aceptan?</h3>
-              <button class="btn secondary" type="button" aria-expanded="false">Mostrar respuesta</button>
-            </div>
-            <p class="faq-answer" hidden>Aceptamos tarjetas internacionales, PayPal y pagos corporativos. También ofrecemos facturación electrónica para empresas.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="alt">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Ventajas de comprar TRY-O</h2>
-          <p>Nuestro servicio está diseñado para que el SolarGuard 10K llegue rápido, seguro y listo para trabajar.</p>
-        </div>
-        <div class="card-grid features-grid">
-          <article class="card">
-            <h3>Envío veloz</h3>
-            <p>Centros logísticos en Norte y Centroamérica reducen tiempos a 48-72 horas.</p>
-          </article>
-          <article class="card">
+          <article class="feature-card reveal">
             <h3>Pago seguro</h3>
-            <p>Checkout cifrado con tarjetas, PayPal y transferencias corporativas verificadas.</p>
+            <p>Procesamos tarjetas, billeteras digitales y transferencias con encriptación bancaria de extremo a extremo.</p>
           </article>
-          <article class="card">
-            <h3>Control de calidad</h3>
-            <p>Inspección de 36 puntos, prueba de panel solar y revisión de puertos antes de cada envío.</p>
+          <article class="feature-card reveal">
+            <h3>Garantía ampliada</h3>
+            <p>Cobertura de 18 meses con reemplazo inmediato ante defectos de fábrica o pérdida de capacidad.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Soporte experto</h3>
+            <p>Equipo técnico 24/7 para asesorarte en instalación, mantenimiento y personalización corporativa.</p>
           </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
+  <footer>
+    <div class="container footer-grid reveal">
       <div>
-        <img src="assets/logo.svg" alt="TRY-O logo" style="width: 140px;" />
-        <p class="muted">TRY-O delivers rechargeable chargers for the fast-paced urban lifestyle—designed with monochrome elegance and engineered for performance.</p>
+        <img src="assets/logo.svg" alt="TRY-O" style="width:120px; margin-bottom:16px;">
+        <p>TRY-O crea soluciones de energía portátil con un enfoque minimalista, seguro y adaptable a la vida urbana.</p>
       </div>
-      <div class="footer-nav">
-        <strong>Navigate</strong>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="product.html">SolarGuard 10K</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <div>
+        <h4>Contacto</h4>
+        <p>hola@try-o.energy</p>
+        <p>+1 (305) 555-0192</p>
+        <p>Av. Neón 45, Ciudad Global</p>
       </div>
-      <div class="footer-contact">
-        <strong>Contact</strong>
-        <span>Email: hello@tryo.energy</span>
-        <span>Phone: +1 (718) 555-2040</span>
-        <span>Location: Brooklyn, NY</span>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <small>© <span id="year">2024</span> TRY-O. All rights reserved.</small>
-    </div>
+    <small>Gracias por visitarnos · © TRY-O 2024</small>
   </footer>
-  <script src="js/main.js" defer></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

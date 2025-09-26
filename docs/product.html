@@ -1,235 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TRY-O SolarGuard 10K | Product</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolarGuard 10K | TRY-O</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
     <div class="container navbar">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/logo.svg" alt="TRY-O logo" />
+        <img src="assets/logo.svg" alt="TRY-O logo">
+        <span>TRY-O</span>
       </a>
-      <nav>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-        <div id="primary-navigation" class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
-          <a href="product.html">SolarGuard 10K</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact</a>
-        </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="products.html">Productos</a>
+        <a href="product.html" class="active">SolarGuard 10K</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
       </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
   <main>
-    <section class="product-hero">
-      <div class="container product-hero__grid">
-        <div class="product-hero__visual">
-          <figure class="product-hero__media">
-            <img src="assets/gallery/backpack-carry.svg" alt="TRY-O SolarGuard 10K colgado en mochila" />
-            <figcaption>Ligero, resistente y siempre accesible gracias al cordón incluido.</figcaption>
-          </figure>
-        </div>
-        <div class="product-hero__details card">
-          <p class="badge">TRY-O SolarGuard 10K</p>
-          <h1>Batería solar portátil con carga rápida y linterna dual.</h1>
-          <p class="muted">Disponible para envío inmediato · Precio unitario</p>
-          <div class="hero-price">
-            <span class="price">$30 USD</span>
-            <span class="muted">Incluye cable USB y manual bilingüe.</span>
-          </div>
-          <p>SolarGuard 10K combina un panel solar monocristalino con salidas USB-A y Type-C para alimentar hasta tres dispositivos a la vez. Su carcasa IPX6 y la linterna LED de tres modos la hacen perfecta para ciudad, viajes y emergencias.</p>
-          <div class="color-swatches" aria-label="Colores disponibles">
-            <span class="swatch" data-color="Naranja" style="--swatch-color: #f97316"></span>
-            <span class="swatch" data-color="Azul" style="--swatch-color: #2563eb"></span>
-            <span class="swatch" data-color="Negro" style="--swatch-color: #0f172a"></span>
-            <span class="swatch-label">Orange · Blue · Black</span>
-          </div>
-          <ul class="feature-list">
-            <li>Cordón portátil y mosquetón para transporte rápido.</li>
-            <li>Panel solar que recarga con luz directa o difusa.</li>
-            <li>Capacidad real de 10,000&nbsp;mAh para múltiples dispositivos.</li>
-            <li>Linterna dual con modos Steady, SOS y Strobe.</li>
-            <li>Carga rápida 5V&nbsp;2.1A y puertos USB-A + Type-C.</li>
-          </ul>
-          <div class="hero-cta">
-            <button class="btn" type="button">Agregar al carrito</button>
-            <a class="btn secondary" href="contact.html">Cotizar mayoreo</a>
+    <section class="hero" style="min-height:auto; padding-top:120px; padding-bottom:80px;">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="tag">Producto destacado</span>
+          <h1>SolarGuard 10K</h1>
+          <p>
+            Potencia portátil de 10&nbsp;000&nbsp;mAh con panel solar integrado, tres modos de linterna y triple salida USB.
+            Diseñado para acompañarte de la oficina al outdoor sin perder el estilo minimalista de TRY-O.
+          </p>
+          <div class="badge-list">
+            <span class="badge">3 Colores</span>
+            <span class="badge">Carga dual</span>
+            <span class="badge">Cordón portátil</span>
+            <span class="badge">$30 USD</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="alt">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Testimonios del SolarGuard 10K</h2>
-          <p>Clientes de TRY-O describen cómo la batería portátil transformó su día a día.</p>
-        </div>
-        <div class="card-grid testimonial-grid">
-          <blockquote class="card testimonial">
-            <p>“Trabajo en producciones audiovisuales y necesito carga extra en locaciones remotas. El panel solar me dio autonomía total durante un rodaje de 12 horas.”</p>
-            <cite>Lena T., Directora de fotografía</cite>
-          </blockquote>
-          <blockquote class="card testimonial">
-            <p>“Lo uso en la bicicleta para repartir pedidos nocturnos. La linterna SOS me hace visible y el precio es perfecto para equipar a todo el equipo.”</p>
-            <cite>Arjun K., Mensajero urbano</cite>
-          </blockquote>
-          <blockquote class="card testimonial">
-            <p>“De camping en familia cargamos tres celulares a la vez. El cordón portátil se engancha a la carpa y la carcasa aguanta lluvia.”</p>
-            <cite>Marisol D., Organizadora de escapadas</cite>
-          </blockquote>
+        <div class="hero-visual reveal">
+          <img src="assets/gallery/dimensions.svg" alt="Dimensiones del SolarGuard 10K">
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <div class="section-heading">
-          <h2>Reseñas en profundidad</h2>
-          <p>Así integran nuestros clientes el SolarGuard 10K en su día a día.</p>
+        <div class="section-header reveal">
+          <span>Descripción completa</span>
+          <h2>Todo lo que incluye tu SolarGuard 10K</h2>
+          <p>Un diseño equilibrado entre estética urbana y funcionalidad profesional para que nunca te quedes sin energía.</p>
         </div>
-        <div class="review-list">
-          <article class="review">
-            <header>
-              <h4>Movilidad urbana sin límites</h4>
-              <span>★★★★★</span>
-            </header>
-            <p class="muted">“El cordón portátil me permite sujetarlo a la bici y recargar el celular entre entregas. No pesa y el acabado negro se mantiene impecable.”</p>
-            <p>— Maya S.</p>
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <h3>Panel solar monocristalino</h3>
+            <p>Recarga ecológica en exteriores, con una eficiencia del 24% y protección contra rayos UV.</p>
           </article>
-          <article class="review">
-            <header>
-              <h4>Producción de contenido outdoor</h4>
-              <span>★★★★☆</span>
-            </header>
-            <p class="muted">“Las linternas SOS y Strobe son ideales para sesiones nocturnas. Al mismo tiempo puedo cargar cámara, micrófono y teléfono.”</p>
-            <p>— Hugo W.</p>
+          <article class="feature-card reveal">
+            <h3>Triple salida USB</h3>
+            <p>Dos puertos USB-A y uno USB-C con balance inteligente para cargar hasta tres dispositivos en paralelo.</p>
           </article>
-          <article class="review">
-            <header>
-              <h4>Respaldo para emergencias</h4>
-              <span>★★★★★</span>
-            </header>
-            <p class="muted">“Durante un apagón, el panel solar mantuvo nuestra radio y luces encendidas. Tres puertos significan que toda la familia sigue conectada.”</p>
-            <p>— River L.</p>
+          <article class="feature-card reveal">
+            <h3>Linterna dual ultrabrillante</h3>
+            <p>Tres modos: estándar, SOS y estroboscópico, con autonomía de 70 horas de iluminación continua.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="visual-gallery">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Especificaciones visuales del SolarGuard 10K</h2>
-          <p>Consulta los gráficos oficiales que acompañan cada unidad para conocer funcionalidades, medidas y protecciones.</p>
-        </div>
-        <div class="image-gallery">
-          <figure class="image-card">
-            <img src="assets/gallery/colorways.svg" alt="Variantes de color" />
-            <figcaption>Orange, Blue y Black: tres acabados listos para integrarse a tu marca.</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img src="assets/gallery/outdoor-power.svg" alt="Poster outdoor" />
-            <figcaption>Linterna dual, gancho colgante y carga solar para aventuras prolongadas.</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img src="assets/gallery/solar-bank.svg" alt="Infografía de carga" />
-            <figcaption>Carga solar más USB simultánea para mantener tus dispositivos activos.</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img src="assets/gallery/safety-guarantee.svg" alt="Gráfico de seguridad" />
-            <figcaption>Multiprotección inteligente contra sobrecarga, voltaje y temperaturas extremas.</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img src="assets/gallery/double-led.svg" alt="Gráfico linterna" />
-            <figcaption>Modos Steady, SOS y Strobe para iluminación y señalización profesional.</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img src="assets/gallery/dimensions.svg" alt="Diagrama de dimensiones" />
-            <figcaption>Mapa completo de puertos, dimensiones y disposición del panel solar.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="alt">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Precio claro y sin sorpresas</h2>
-          <p>Calcula tu inversión antes de completar la compra.</p>
-        </div>
-        <div class="card pricing-breakdown" style="max-width: 520px; margin-inline: auto;">
-          <div class="pricing-row">
-            <span>TRY-O SolarGuard 10K</span>
-            <span>$30.00</span>
-          </div>
-          <div class="pricing-row">
-            <span>Envío asegurado (promedio)</span>
-            <span>$6.00</span>
-          </div>
-          <div class="pricing-row">
-            <span>Protector de puertos opcional</span>
-            <span>$3.00</span>
-          </div>
-          <div class="pricing-row pricing-total">
-            <span>Total estimado</span>
-            <span>$39.00</span>
-          </div>
-          <p class="muted" style="margin: 0;">Impuestos calculados al finalizar. Pedidos corporativos obtienen tarifas preferenciales.</p>
+          <article class="feature-card reveal">
+            <h3>Resistencia IPX4</h3>
+            <p>Carcasa reforzada, esquinas amortiguadas y sellado contra salpicaduras para ambientes exigentes.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="container" style="display: grid; gap: 24px; text-align: center;">
-        <h2>¿Listo para llevarte el SolarGuard 10K?</h2>
-        <p class="muted">Añádelo al carrito o contáctanos para pedidos especiales y personalización de color.</p>
-        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-          <button class="btn" type="button">Comprar ahora</button>
-          <a class="btn secondary" href="products.html">Ver catálogo</a>
+      <div class="container">
+        <div class="section-header reveal">
+          <span>Opiniones del producto</span>
+          <h2>Clientes que confían en SolarGuard 10K</h2>
+          <p>El 96% de los usuarios califica el dispositivo con 5 estrellas gracias a su desempeño y durabilidad.</p>
+        </div>
+        <div class="testimonials">
+          <article class="testimonial-card reveal">
+            <div class="testimonial-author">
+              <strong>Camila · Ingeniera</strong>
+              <span>Santiago</span>
+            </div>
+            <p>“Lo uso en terreno y la batería se mantiene estable incluso con frío intenso. El cordón es comodísimo.”</p>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-author">
+              <strong>Joel · DJ</strong>
+              <span>Monterrey</span>
+            </div>
+            <p>“Siempre tengo mis controladores listos. Lo cargo durante el día con el panel solar y por la noche me salva.”</p>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-author">
+              <strong>Natalia · Arquitecta</strong>
+              <span>Valencia</span>
+            </div>
+            <p>“El acabado negro es elegante y combina con mis dispositivos. La linterna SOS me dio tranquilidad en un viaje.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container cta-panel reveal">
+        <h2>Lleva el SolarGuard 10K a tu próxima aventura</h2>
+        <p>Disponible por $30 USD. Envío express, pago seguro y garantía extendida de 18 meses en todos los pedidos.</p>
+        <div class="hero-cta" style="justify-content:center;">
+          <a class="btn" href="contact.html">Solicitar compra</a>
+          <a class="btn secondary" href="products.html">Volver al catálogo</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span>Reseñas detalladas</span>
+          <h2>Experiencias con imágenes reales</h2>
+          <p>Compartimos testimonios con fotos para que visualices el SolarGuard 10K en distintos contextos.</p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <h4>Ideal para viajes de trekking</h4>
+            <span>5 ★★★★★ · Abril 2024</span>
+            <img src="assets/gallery/outdoor-power.svg" alt="SolarGuard 10K en excursión">
+            <p>“Lo colgué de mi mochila durante un trekking de tres días. Siempre tuve batería para el GPS y mi cámara.”</p>
+          </article>
+          <article class="review-card reveal">
+            <h4>Oficina y afterwork</h4>
+            <span>4.5 ★★★★☆ · Marzo 2024</span>
+            <img src="assets/gallery/solar-usb.svg" alt="SolarGuard 10K sobre escritorio">
+            <p>“En la oficina cargo mi laptop y audífonos. De noche lo llevo a eventos y la linterna hace la diferencia.”</p>
+          </article>
+          <article class="review-card reveal">
+            <h4>Seguridad para el hogar</h4>
+            <span>5 ★★★★★ · Febrero 2024</span>
+            <img src="assets/gallery/10000mah-emergency.svg" alt="SolarGuard 10K iluminando un hogar">
+            <p>“Durante un apagón, la linterna SOS iluminó toda la sala. No hubo sobrecargas ni calentamiento.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span>Inversión transparente</span>
+          <h2>Planes y precios</h2>
+          <p>Selecciona la opción que mejor se adapte a tu necesidad, ya sea individual o para equipos completos.</p>
+        </div>
+        <div class="pricing-table">
+          <article class="price-card reveal">
+            <h3>Individual</h3>
+            <strong>$30 USD</strong>
+            <p>Incluye cable USB-C, guía rápida y garantía de 18 meses.</p>
+            <a class="btn secondary" href="contact.html">Comprar</a>
+          </article>
+          <article class="price-card reveal">
+            <h3>Pack 5 unidades</h3>
+            <strong>$135 USD</strong>
+            <p>Ideal para equipos de trabajo. Incluye asesoría de configuración y envío gratuito.</p>
+            <a class="btn secondary" href="contact.html">Solicitar cotización</a>
+          </article>
+          <article class="price-card reveal">
+            <h3>Corporativo</h3>
+            <strong>Desde $500 USD</strong>
+            <p>Personalización con logo, sesiones de capacitación y soporte dedicado 24/7.</p>
+            <a class="btn secondary" href="contact.html">Hablar con ventas</a>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
+  <footer>
+    <div class="container footer-grid reveal">
       <div>
-        <img src="assets/logo.svg" alt="TRY-O logo" style="width: 140px;" />
-        <p class="muted">TRY-O delivers rechargeable chargers for the fast-paced urban lifestyle—designed with monochrome elegance and engineered for performance.</p>
+        <img src="assets/logo.svg" alt="TRY-O" style="width:120px; margin-bottom:16px;">
+        <p>TRY-O crea soluciones de energía portátil con un enfoque minimalista, seguro y adaptable a la vida urbana.</p>
       </div>
-      <div class="footer-nav">
-        <strong>Navigate</strong>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="product.html">SolarGuard 10K</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <div>
+        <h4>Contacto</h4>
+        <p>hola@try-o.energy</p>
+        <p>+1 (305) 555-0192</p>
+        <p>Av. Neón 45, Ciudad Global</p>
       </div>
-      <div class="footer-contact">
-        <strong>Contact</strong>
-        <span>Email: hello@tryo.energy</span>
-        <span>Phone: +1 (718) 555-2040</span>
-        <span>Location: Brooklyn, NY</span>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <small>© <span id="year">2024</span> TRY-O. All rights reserved.</small>
-    </div>
+    <small>Gracias por visitarnos · © TRY-O 2024</small>
   </footer>
-  <script src="js/main.js" defer></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

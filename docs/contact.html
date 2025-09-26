@@ -1,166 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact TRY-O | Get in Touch</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto TRY-O</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
     <div class="container navbar">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/logo.svg" alt="TRY-O logo" />
+        <img src="assets/logo.svg" alt="TRY-O logo">
+        <span>TRY-O</span>
       </a>
-      <nav>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-        <div id="primary-navigation" class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
-          <a href="product.html">SolarGuard 10K</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact</a>
-        </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="products.html">Productos</a>
+        <a href="product.html">SolarGuard 10K</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html" class="active">Contacto</a>
       </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
   <main>
-    <section>
-      <div class="container" style="display: grid; gap: 16px;">
-        <p class="badge">Contact TRY-O</p>
-        <h1>Let’s connect about powering your world.</h1>
-        <p class="muted">Whether you’re an individual shopper, a wholesale partner, or a curious creator, we’re here to answer your questions.</p>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Contact details</h3>
-            <p>Email: hello@tryo.energy</p>
-            <p>Phone: +1 (718) 555-2040</p>
-            <p>Address: 145 Wythe Ave, Brooklyn, NY</p>
-            <p>Business Hours: Mon–Fri, 9am–7pm EST</p>
-          </div>
-          <div class="contact-card">
-            <h3>Wholesale &amp; press</h3>
-            <p>Bulk inquiries: wholesale@tryo.energy</p>
-            <p>Media requests: press@tryo.energy</p>
-            <p>Partnerships: collab@tryo.energy</p>
-          </div>
+    <section class="hero" style="min-height:auto; padding-top:120px; padding-bottom:80px;">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="tag">Hablemos</span>
+          <h1>Conecta con el equipo TRY-O</h1>
+          <p>
+            Estamos disponibles para ayudarte con compras, soporte técnico y proyectos especiales. Completa el formulario
+            o escríbenos directamente a nuestros canales oficiales.
+          </p>
+        </div>
+        <div class="hero-visual reveal">
+          <img src="assets/gallery/solar-usb.svg" alt="Ilustración de contacto TRY-O">
         </div>
       </div>
     </section>
 
-    <section class="alt">
-      <div class="container contact-grid">
-        <form class="card" style="gap: 18px;">
-          <h2>Send us a message</h2>
+    <section>
+      <div class="container contact-wrapper">
+        <div class="contact-details reveal">
+          <h2>Información de contacto</h2>
+          <p><strong>Email:</strong> hola@try-o.energy</p>
+          <p><strong>Teléfono:</strong> +1 (305) 555-0192</p>
+          <p><strong>Soporte 24/7:</strong> soporte@try-o.energy</p>
           <div>
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" placeholder="Your name" required />
+            <h3>Horarios</h3>
+            <p>Lunes a Viernes · 9:00 a 19:00 (GMT-5)</p>
+            <p>Sábados · 10:00 a 14:00 (GMT-5)</p>
           </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="you@example.com" required />
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="YouTube">YT</a>
           </div>
-          <div>
-            <label for="topic">Topic</label>
-            <select id="topic" name="topic">
-              <option value="support">Product support</option>
-              <option value="order">Order status</option>
-              <option value="wholesale">Wholesale inquiry</option>
-              <option value="press">Press / media</option>
-            </select>
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
-          </div>
-          <button class="btn" type="submit">Submit</button>
+        </div>
+        <form class="form-card reveal">
+          <h2>Escríbenos</h2>
+          <label for="name">Nombre completo</label>
+          <input id="name" type="text" name="name" placeholder="Tu nombre" required>
+
+          <label for="email">Correo electrónico</label>
+          <input id="email" type="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+          <label for="topic">Motivo</label>
+          <input id="topic" type="text" name="topic" placeholder="Compra corporativa, soporte, etc." required>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+
+          <button class="btn" type="submit">Enviar mensaje</button>
         </form>
-        <div class="map-placeholder card">
-          <h2>Our HQ</h2>
-          <p>Brooklyn, New York</p>
-          <p class="muted">Interactive map coming soon. In the meantime, we’re right off the Bedford Ave L-train stop.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span>Nuestras ubicaciones</span>
+          <h2>Centros TRY-O alrededor del mundo</h2>
+          <p>Estamos construyendo una red de hubs urbanos para responder más rápido a las necesidades de nuestra comunidad.</p>
+        </div>
+        <div class="locations-grid">
+          <article class="location-card reveal">
+            <h3>Ciudad de México</h3>
+            <p>Centro de distribución y laboratorio de prototipos.</p>
+          </article>
+          <article class="location-card reveal">
+            <h3>Madrid</h3>
+            <p>Oficina comercial y showroom de experiencias.</p>
+          </article>
+          <article class="location-card reveal">
+            <h3>Buenos Aires</h3>
+            <p>Soporte técnico regional y capacitaciones.</p>
+          </article>
+          <article class="location-card reveal">
+            <h3>Miami</h3>
+            <p>Headquarters global y alianzas corporativas.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <div class="section-heading">
-          <h2>FAQ</h2>
-          <p>Quick answers to common inquiries.</p>
+        <div class="map-embed reveal">
+          <strong>TRY-O Headquarters</strong>
+          <p>Av. Neón 45 · Distrito Tecno · Miami, FL</p>
+          <p>Coordenadas: 25.7617° N, 80.1918° W</p>
         </div>
-        <div class="faq">
-          <article class="faq-item card" data-faq-item>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <h3 style="margin: 0;">How can I track my order?</h3>
-              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
-            </div>
-            <p class="faq-answer" hidden>You’ll receive a tracking number within 12 hours of fulfillment and real-time updates via SMS or email.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span>FAQ</span>
+          <h2>Respuestas rápidas</h2>
+          <p>Consulta las dudas más comunes antes de escribirnos.</p>
+        </div>
+        <div class="faq-accordion">
+          <article class="faq-item reveal">
+            <h3>¿Cuál es el tiempo de respuesta del equipo TRY-O?</h3>
+            <p>Respondemos correos y formularios en menos de 12 horas hábiles. Para urgencias utiliza el chat 24/7.</p>
           </article>
-          <article class="faq-item card" data-faq-item>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <h3 style="margin: 0;">Do you offer international shipping?</h3>
-              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
-            </div>
-            <p class="faq-answer" hidden>Yes, TRY-O ships across North America, Europe, and select APAC cities with region-based fulfillment.</p>
+          <article class="faq-item reveal">
+            <h3>¿Puedo coordinar demostraciones presenciales?</h3>
+            <p>Sí, agenda una visita en nuestros hubs y conocerás configuraciones personalizadas para tu empresa.</p>
           </article>
-          <article class="faq-item card" data-faq-item>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <h3 style="margin: 0;">Can I schedule a consultation?</h3>
-              <button class="btn secondary" type="button" aria-expanded="false">Toggle answer</button>
-            </div>
-            <p class="faq-answer" hidden>Absolutely. Submit the form above and we’ll book a time to talk about your needs.</p>
+          <article class="faq-item reveal">
+            <h3>¿Ofrecen asistencia postventa?</h3>
+            <p>Cada compra incluye acompañamiento durante 18 meses con diagnósticos remotos y reemplazos express.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="alt">
-      <div class="container" style="display: grid; gap: 24px; text-align: center;">
-        <h2>Need instant answers?</h2>
-        <p class="muted">Browse our knowledge base or drop us a line—TRY-O responds within one business day.</p>
-        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-          <a class="btn" href="products.html">Shop Chargers</a>
-          <a class="btn secondary" href="mailto:hello@tryo.energy">Email Us</a>
-        </div>
+    <section>
+      <div class="container cta-panel reveal">
+        <h2>Listo para encender tu próximo proyecto</h2>
+        <p>Cuéntanos tus necesidades y construyamos juntos una solución de energía portátil a la medida.</p>
+        <a class="btn" href="mailto:hola@try-o.energy">Contactar ahora</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
+  <footer>
+    <div class="container footer-grid reveal">
       <div>
-        <img src="assets/logo.svg" alt="TRY-O logo" style="width: 140px;" />
-        <p class="muted">TRY-O delivers rechargeable chargers for the fast-paced urban lifestyle—designed with monochrome elegance and engineered for performance.</p>
+        <img src="assets/logo.svg" alt="TRY-O" style="width:120px; margin-bottom:16px;">
+        <p>TRY-O crea soluciones de energía portátil con un enfoque minimalista, seguro y adaptable a la vida urbana.</p>
       </div>
-      <div class="footer-nav">
-        <strong>Navigate</strong>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="product.html">SolarGuard 10K</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <div>
+        <h4>Contacto</h4>
+        <p>hola@try-o.energy</p>
+        <p>+1 (305) 555-0192</p>
+        <p>Av. Neón 45, Ciudad Global</p>
       </div>
-      <div class="footer-contact">
-        <strong>Contact</strong>
-        <span>Email: hello@tryo.energy</span>
-        <span>Phone: +1 (718) 555-2040</span>
-        <span>Location: Brooklyn, NY</span>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <small>© <span id="year">2024</span> TRY-O. All rights reserved.</small>
-    </div>
+    <small>Gracias por visitarnos · © TRY-O 2024</small>
   </footer>
-  <script src="js/main.js" defer></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
