@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">TRY-O Solar Power Bank colorways</title>
+  <desc id="desc">Three TRY-O Solar Power Bank renders showing the orange, blue, and black finishes.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#464a53" />
+      <stop offset="100%" stop-color="#2d3036" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#0b0d11" flood-opacity="0.35" />
+    </filter>
+  </defs>
+  <rect width="640" height="400" rx="40" fill="#0f1117" />
+  <g transform="translate(90 40)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="12">
+    <g transform="translate(0 0)" filter="url(#shadow)">
+      <rect x="6" y="6" width="140" height="320" rx="36" fill="#14171f" stroke="#2a2e36" />
+      <rect x="26" y="36" width="100" height="220" rx="24" fill="url(#panel)" stroke="#3c4048" stroke-width="6" />
+      <rect x="26" y="270" width="100" height="32" rx="16" fill="#f97316" stroke="#fbbf24" />
+      <circle cx="76" cy="76" r="8" fill="#0f1117" stroke="#fbbf24" stroke-width="4" />
+      <circle cx="76" cy="116" r="8" fill="#0f1117" stroke="#fbbf24" stroke-width="4" />
+      <circle cx="76" cy="156" r="8" fill="#0f1117" stroke="#fbbf24" stroke-width="4" />
+    </g>
+    <g transform="translate(184 0)" filter="url(#shadow)">
+      <rect x="6" y="6" width="140" height="320" rx="36" fill="#14171f" stroke="#2a2e36" />
+      <rect x="26" y="36" width="100" height="220" rx="24" fill="url(#panel)" stroke="#3c4048" stroke-width="6" />
+      <rect x="26" y="270" width="100" height="32" rx="16" fill="#2563eb" stroke="#60a5fa" />
+      <circle cx="76" cy="76" r="8" fill="#0f1117" stroke="#60a5fa" stroke-width="4" />
+      <circle cx="76" cy="116" r="8" fill="#0f1117" stroke="#60a5fa" stroke-width="4" />
+      <circle cx="76" cy="156" r="8" fill="#0f1117" stroke="#60a5fa" stroke-width="4" />
+    </g>
+    <g transform="translate(368 0)" filter="url(#shadow)">
+      <rect x="6" y="6" width="140" height="320" rx="36" fill="#14171f" stroke="#2a2e36" />
+      <rect x="26" y="36" width="100" height="220" rx="24" fill="url(#panel)" stroke="#3c4048" stroke-width="6" />
+      <rect x="26" y="270" width="100" height="32" rx="16" fill="#1f2937" stroke="#4b5563" />
+      <circle cx="76" cy="76" r="8" fill="#0f1117" stroke="#4b5563" stroke-width="4" />
+      <circle cx="76" cy="116" r="8" fill="#0f1117" stroke="#4b5563" stroke-width="4" />
+      <circle cx="76" cy="156" r="8" fill="#0f1117" stroke="#4b5563" stroke-width="4" />
+    </g>
+  </g>
+  <text x="320" y="368" fill="#e5e7eb" font-family="'Montserrat', 'Arial', sans-serif" font-size="28" text-anchor="middle">
+    Orange · Blue · Black signature finishes
+  </text>
+</svg>

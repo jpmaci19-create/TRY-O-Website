@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#050505" />
+      <stop offset="100%" stop-color="#1f1f1f" />
+    </linearGradient>
+    <style>
+      .label { font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; fill: #f5f5f5; }
+      .title { font-size: 58px; font-weight: 700; text-transform: uppercase; }
+      .body { font-size: 24px; fill: #d0d0d0; }
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <text class="label title" x="120" y="150">10000 mAh</text>
+  <text class="label body" x="120" y="200">Two LED Flashlight · Power Indicator · Solar Panel</text>
+  <text class="label body" x="120" y="250">Type-C Input/Output · USB Output · Power button &amp; flashlight switch</text>
+  <rect x="540" y="220" width="260" height="420" rx="60" fill="#101010" stroke="#ff7f27" stroke-width="8" />
+  <rect x="580" y="260" width="180" height="340" rx="40" fill="#161616" />
+  <line x1="540" y1="660" x2="800" y2="660" stroke="#9ae83b" stroke-width="6" marker-end="url(#arrow)" />
+  <line x1="540" y1="220" x2="540" y2="640" stroke="#9ae83b" stroke-width="6" marker-end="url(#arrow)" />
+  <text class="label body" x="420" y="690">4.26in</text>
+  <text class="label body" x="820" y="560" transform="rotate(-90 820 560)">2.8in</text>
+  <text class="label body" x="120" y="340">Incluye indicador de carga y doble linterna LED.</text>
+  <text class="label body" x="120" y="390">Botón multifunción para control de linterna y energía.</text>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 z" fill="#9ae83b" />
+    </marker>
+  </defs>
+</svg>

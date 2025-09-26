@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">TRY-O solar power bank clipped to backpack</title>
+  <desc id="desc">Illustration of the TRY-O Solar Power Bank attached to a technical backpack while hiking outdoors.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0b1120" />
+    </linearGradient>
+    <linearGradient id="mount" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f2937" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="pack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#616977" />
+      <stop offset="100%" stop-color="#2e333d" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#sky)" rx="32" />
+  <path d="M0 340 L160 240 L320 340 Z" fill="url(#mount)" opacity="0.35" />
+  <path d="M220 360 L360 220 L500 360 Z" fill="url(#mount)" opacity="0.6" />
+  <g transform="translate(140 60)">
+    <path d="M140 0 h120 a60 60 0 0 1 60 60 v200 a80 80 0 0 1 -80 80 h-80 a80 80 0 0 1 -80 -80 v-160 a100 100 0 0 1 100 -100z" fill="url(#pack)" stroke="#334155" stroke-width="8" />
+    <path d="M200 72 a48 48 0 0 1 48 48 v64 a48 48 0 0 1 -48 48 h-64 a48 48 0 0 1 -48 -48 v-24 a88 88 0 0 1 88 -88z" fill="#0f172a" stroke="#1f2937" stroke-width="6" />
+    <path d="M196 92 a36 36 0 0 1 36 36 v60 a36 36 0 0 1 -36 36 h-56 a36 36 0 0 1 -36 -36 v-28 a72 72 0 0 1 72 -72z" fill="#111827" stroke="#1e293b" stroke-width="4" />
+    <path d="M120 60 h160 a24 24 0 0 1 24 24 v32 h-208 v-32 a24 24 0 0 1 24 -24z" fill="#1f2937" stroke="#334155" stroke-width="6" />
+    <path d="M160 24 h80 a24 24 0 0 1 24 24 v24 h-128 v-24 a24 24 0 0 1 24 -24z" fill="#0f172a" stroke="#1f2937" stroke-width="6" />
+    <path d="M220 300 h24 a28 28 0 0 1 28 28 v12 h-160 v-12 a28 28 0 0 1 28 -28h24" fill="#1f2937" stroke="#334155" stroke-width="6" />
+  </g>
+  <g transform="translate(396 116)">
+    <rect x="0" y="0" width="76" height="180" rx="28" fill="#0f172a" stroke="#1f2937" stroke-width="6" />
+    <rect x="12" y="24" width="52" height="120" rx="18" fill="url(#panel)" stroke="#3b4250" stroke-width="6" />
+    <rect x="12" y="150" width="52" height="28" rx="14" fill="#f97316" stroke="#fbbf24" stroke-width="4" />
+    <circle cx="38" cy="48" r="6" fill="#111827" stroke="#fbbf24" stroke-width="4" />
+    <circle cx="38" cy="80" r="6" fill="#111827" stroke="#fbbf24" stroke-width="4" />
+    <path d="M38 178 v28" stroke="#9ca3af" stroke-width="6" stroke-linecap="round" />
+    <circle cx="38" cy="214" r="12" fill="#f97316" stroke="#fbbf24" stroke-width="4" />
+    <path d="M38 226 l-28 36" stroke="#f97316" stroke-width="6" stroke-linecap="round" />
+  </g>
+  <path d="M414 232 q24 8 40 28 t14 46" fill="none" stroke="#f97316" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 12" />
+  <text x="72" y="360" fill="#f8fafc" font-family="'Montserrat', 'Arial', sans-serif" font-size="26">Clip it. Charge it. Keep moving.</text>
+</svg>
