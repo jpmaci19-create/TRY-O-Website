@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#1d1d1d" />
+    </linearGradient>
+    <style>
+      .label { font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; fill: #f5f5f5; }
+      .title { font-size: 80px; font-weight: 700; }
+      .subtitle { font-size: 30px; font-weight: 600; fill: #9ae83b; text-transform: uppercase; }
+      .body { font-size: 26px; fill: #d0d0d0; }
+      .tag { font-size: 24px; fill: #101010; font-weight: 600; }
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <text class="label title" x="120" y="180">10000mAh</text>
+  <text class="label subtitle" x="120" y="240">cargador solar</text>
+  <text class="label body" x="120" y="320">Puede cargar 3 dispositivos al mismo tiempo.</text>
+  <rect x="120" y="360" width="360" height="120" rx="24" fill="#f5f5f5" />
+  <text class="tag" x="150" y="430">USB-A × 2</text>
+  <rect x="520" y="360" width="360" height="120" rx="24" fill="#f5f5f5" />
+  <text class="tag" x="550" y="430">Type-C × 1</text>
+  <rect x="280" y="520" width="640" height="200" rx="48" fill="#111" stroke="#ff7f27" stroke-width="10" />
+  <rect x="340" y="560" width="520" height="120" rx="36" fill="#181818" />
+  <circle cx="380" cy="620" r="22" fill="#9ae83b" />
+  <circle cx="440" cy="620" r="22" fill="#9ae83b" />
+  <circle cx="500" cy="620" r="22" fill="#9ae83b" />
+  <text class="label body" x="280" y="750">Distribución inteligente de energía en tres puertos simultáneos.</text>
+</svg>

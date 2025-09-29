@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101010" />
+      <stop offset="100%" stop-color="#2b2b2b" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f1f1f" />
+      <stop offset="100%" stop-color="#3a3a3a" />
+    </linearGradient>
+    <style>
+      .label { font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; fill: #f5f5f5; }
+      .title { font-size: 68px; font-weight: 700; letter-spacing: 2px; }
+      .subtitle { font-size: 32px; font-weight: 600; fill: #9ae83b; text-transform: uppercase; }
+      .body { font-size: 26px; font-weight: 500; fill: #d8d8d8; }
+      .card { fill: url(#grad2); stroke: #3f3f3f; stroke-width: 4; rx: 32; }
+      .badge { font-size: 20px; text-transform: uppercase; letter-spacing: 3px; fill: #9ae83b; }
+      .icon-bg { fill: rgba(255,255,255,0.06); }
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad1)" />
+  <rect class="card" x="70" y="120" width="500" height="560" />
+  <rect class="card" x="630" y="120" width="500" height="560" />
+  <text class="label subtitle" x="120" y="210">Solar Charge</text>
+  <text class="label body" x="120" y="270">Unos días, con carga dependiendo</text>
+  <text class="label body" x="120" y="315">del clima.</text>
+  <circle cx="320" cy="470" r="120" fill="#202020" stroke="#5c5c5c" stroke-width="6" />
+  <rect x="280" y="390" width="80" height="160" rx="26" fill="#161616" stroke="#ff7f27" stroke-width="6" />
+  <rect x="300" y="410" width="40" height="80" rx="10" fill="#2a2a2a" />
+  <circle cx="320" cy="540" r="28" fill="#9ae83b" />
+  <text class="label subtitle" x="680" y="210">USB Charge</text>
+  <text class="label body" x="680" y="270">6-8 horas, cargada con adaptador</text>
+  <text class="label body" x="680" y="315">de 5 V / 3,1 A.</text>
+  <rect x="780" y="360" width="260" height="180" rx="32" fill="#202020" stroke="#4f4f4f" stroke-width="5" />
+  <rect x="1010" y="380" width="60" height="140" rx="20" fill="#1a1a1a" stroke="#4f4f4f" stroke-width="5" />
+  <rect x="770" y="560" width="300" height="30" rx="14" fill="#2f2f2f" />
+  <text class="label badge" x="120" y="680">Carga híbrida inteligente</text>
+  <text class="label badge" x="680" y="680">Energía para aventureros urbanos</text>
+</svg>
