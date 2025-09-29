@@ -922,3 +922,62 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+.product-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.product-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.product-section .subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.cta {
+  margin-top: 40px;
+}
+
+.cta .btn {
+  display: inline-block;
+  background: #ff6600;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta .btn:hover {
+  background: #e65500;
+}
