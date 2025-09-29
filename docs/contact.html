@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto TRY-O</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.svg" alt="TRY-O logo">
+        <span>TRY-O</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="products.html">Productos</a>
+        <a href="product.html">SolarGuard 10K</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html" class="active">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="min-height:auto; padding-top:120px; padding-bottom:80px;">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="tag">Hablemos</span>
+          <h1>Conecta con el equipo TRY-O</h1>
+          <p>
+            Estamos disponibles para ayudarte con compras, soporte técnico y proyectos especiales. Completa el formulario
+            o escríbenos directamente a nuestros canales oficiales.
+          </p>
+        </div>
+        <div class="hero-visual reveal">
+          <img src="assets/gallery/solar-usb.svg" alt="Ilustración de contacto TRY-O">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact-wrapper">
+        <div class="contact-details reveal">
+          <h2>Información de contacto</h2>
+          <p><strong>Email:</strong> hola@try-o.energy</p>
+          <p><strong>Teléfono:</strong> +1 (305) 555-0192</p>
+          <p><strong>Soporte 24/7:</strong> soporte@try-o.energy</p>
+          <div>
+            <h3>Horarios</h3>
+            <p>Lunes a Viernes · 9:00 a 19:00 (GMT-5)</p>
+            <p>Sábados · 10:00 a 14:00 (GMT-5)</p>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <form class="form-card reveal">
+          <h2>Escríbenos</h2>
+          <label for="name">Nombre completo</label>
+          <input id="name" type="text" name="name" placeholder="Tu nombre" required>
+
+          <label for="email">Correo electrónico</label>
+          <input id="email" type="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+          <label for="topic">Motivo</label>
+          <input id="topic" type="text" name="topic" placeholder="Compra corporativa, soporte, etc." required>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+
+          <button class="btn" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span>Nuestras ubicaciones</span>
+          <h2>Centros TRY-O alrededor del mundo</h2>
+          <p>Estamos construyendo una red de hubs urbanos para responder más rápido a las necesidades de nuestra comunidad.</p>
+        </div>
+        <div class="locations-grid">
+          <article class="location-card reveal" data-reveal="up">
+            <h3>Ciudad de México</h3>
+            <p>Centro de distribución y laboratorio de prototipos.</p>
+          </article>
+          <article class="location-card reveal" data-reveal="left">
+            <h3>Madrid</h3>
+            <p>Oficina comercial y showroom de experiencias.</p>
+          </article>
+          <article class="location-card reveal" data-reveal="up">
+            <h3>Buenos Aires</h3>
+            <p>Soporte técnico regional y capacitaciones.</p>
+          </article>
+          <article class="location-card reveal" data-reveal="right">
+            <h3>Miami</h3>
+            <p>Headquarters global y alianzas corporativas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="map-embed reveal" data-reveal="up">
+          <iframe
+            title="Ubicación TRY-O en Miami"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-80.2018%2C25.7517%2C-80.1818%2C25.7717&amp;layer=mapnik&amp;marker=25.7617%2C-80.1918"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p class="map-caption">Av. Neón 45 · Distrito Tecno · Miami, FL · Coordenadas 25.7617° N, 80.1918° W</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span>FAQ</span>
+          <h2>Respuestas rápidas</h2>
+          <p>Consulta las dudas más comunes antes de escribirnos.</p>
+        </div>
+        <div class="faq-accordion">
+          <article class="faq-item reveal" data-reveal="left">
+            <h3>¿Cuál es el tiempo de respuesta del equipo TRY-O?</h3>
+            <p>Respondemos correos y formularios en menos de 12 horas hábiles. Para urgencias utiliza el chat 24/7.</p>
+          </article>
+          <article class="faq-item reveal" data-reveal="up">
+            <h3>¿Puedo coordinar demostraciones presenciales?</h3>
+            <p>Sí, agenda una visita en nuestros hubs y conocerás configuraciones personalizadas para tu empresa.</p>
+          </article>
+          <article class="faq-item reveal" data-reveal="right">
+            <h3>¿Ofrecen asistencia postventa?</h3>
+            <p>Cada compra incluye acompañamiento durante 18 meses con diagnósticos remotos y reemplazos express.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container cta-panel reveal" data-reveal="up">
+        <h2>Listo para encender tu próximo proyecto</h2>
+        <p>Cuéntanos tus necesidades y construyamos juntos una solución de energía portátil a la medida.</p>
+        <a class="btn" href="mailto:hola@try-o.energy">Contactar ahora</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid reveal">
+      <div>
+        <img src="assets/logo.svg" alt="TRY-O" style="width:120px; margin-bottom:16px;">
+        <p>TRY-O crea soluciones de energía portátil con un enfoque minimalista, seguro y adaptable a la vida urbana.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>hola@try-o.energy</p>
+        <p>+1 (305) 555-0192</p>
+        <p>Av. Neón 45, Ciudad Global</p>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+    <small>Gracias por visitarnos · © TRY-O 2024</small>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

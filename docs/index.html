@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRY-O | Cargadores solares urbanos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.svg" alt="TRY-O logo">
+        <span>TRY-O</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="products.html">Productos</a>
+        <a href="product.html">SolarGuard 10K</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="--hero-background: url('assets/gallery/outdoor-power.svg');">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal" data-reveal="up">
+          <span class="tag">Energía urbana portátil</span>
+          <h1>SolarGuard 10K: potencia confiable para la ciudad y la aventura</h1>
+          <p>
+            TRY-O diseña cargadores recargables que combinan energía solar, carga rápida y un estilo urbano minimalista.
+            Llévalo colgado, en tu mochila o sobre el escritorio y mantén tus dispositivos activos todo el día.
+          </p>
+          <div class="hero-cta">
+            <a class="btn" href="product.html">Comprar ahora</a>
+            <a class="btn secondary" href="products.html">Explorar catálogo</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-reveal="right" data-color-group>
+          <div class="media-frame">
+            <img
+              src="assets/gallery/solar-bank.svg"
+              alt="SolarGuard 10K color naranja sobre mesa minimalista"
+              data-color-display="hero"
+            >
+          </div>
+          <div class="color-selector" role="radiogroup" aria-label="Selecciona el color del SolarGuard 10K">
+            <button
+              class="color-option is-active"
+              type="button"
+              data-color-option
+              data-target="hero"
+              data-color="orange"
+              data-image="assets/gallery/solar-bank.svg"
+              data-alt="SolarGuard 10K en color naranja"
+              aria-label="Naranja"
+              aria-pressed="true"
+            >
+              <span class="color-swatch" style="--swatch-color:#ff6b35"></span>
+              <span>Naranja</span>
+            </button>
+            <button
+              class="color-option"
+              type="button"
+              data-color-option
+              data-target="hero"
+              data-color="blue"
+              data-image="assets/gallery/10000mah-multi.svg"
+              data-alt="SolarGuard 10K en color azul"
+              aria-label="Azul"
+              aria-pressed="false"
+            >
+              <span class="color-swatch" style="--swatch-color:#3f8cff"></span>
+              <span>Azul</span>
+            </button>
+            <button
+              class="color-option"
+              type="button"
+              data-color-option
+              data-target="hero"
+              data-color="black"
+              data-image="assets/gallery/10000mah-emergency.svg"
+              data-alt="SolarGuard 10K en color negro"
+              aria-label="Negro"
+              aria-pressed="false"
+            >
+              <span class="color-swatch" style="--swatch-color:#111217"></span>
+              <span>Negro</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span>Características clave</span>
+          <h2>Diseñado para movilidad, seguridad y estilo</h2>
+          <p>
+            Cada cargador TRY-O integra materiales resistentes, sensores inteligentes y un ecosistema de accesorios
+            para que la energía acompañe tu ritmo de vida sin comprometer la estética minimalista.
+          </p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card reveal" data-reveal="left">
+            <div class="feature-icon">
+              <img src="assets/gallery/solar-usb.svg" alt="Icono de carga solar y USB">
+            </div>
+            <h3>Híbrido solar + USB-C</h3>
+            <p>Panel fotovoltaico y carga rápida 5V/2.1A para recuperar energía en minutos, incluso en movimiento.</p>
+          </article>
+          <article class="feature-card reveal" data-reveal="right">
+            <div class="feature-icon">
+              <img src="assets/gallery/double-led.svg" alt="Icono de linterna dual">
+            </div>
+            <h3>Iluminación dual</h3>
+            <p>Tres modos de linterna ultra brillante para emergencias nocturnas, camping o cortes de energía.</p>
+          </article>
+          <article class="feature-card reveal" data-reveal="left">
+            <div class="feature-icon">
+              <img src="assets/gallery/waterproof.svg" alt="Icono de resistencia al agua">
+            </div>
+            <h3>Listo para exteriores</h3>
+            <p>Certificación IPX4 y carcasa antigolpes que resiste lluvia ligera, polvo urbano y aventuras todoterreno.</p>
+          </article>
+          <article class="feature-card reveal" data-reveal="right">
+            <div class="feature-icon">
+              <img src="assets/gallery/safety-guarantee.svg" alt="Icono de seguridad">
+            </div>
+            <h3>Protección inteligente</h3>
+            <p>Control térmico, balanceo de carga y blindaje eléctrico para cuidar tus dispositivos 24/7.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span>Catálogo TRY-O</span>
+          <h2>Un único dispositivo, tres expresiones</h2>
+          <p>
+            SolarGuard 10K está disponible en negro grafito, azul eléctrico y naranja audaz. Elige el acabado
+            que combina con tu estilo sin renunciar a la potencia de 10&nbsp;000&nbsp;mAh.
+          </p>
+        </div>
+        <div class="catalog-grid">
+          <article class="product-card reveal is-active" data-variant-card="orange" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/solar-bank.svg" alt="SolarGuard 10K naranja con panel solar">
+            </div>
+            <div class="product-card-body">
+              <h3>SolarGuard 10K Naranja</h3>
+              <p>Carga solar ultrarrápida y cordón portátil para salidas al aire libre.</p>
+              <div class="product-meta">
+                <span>$30 USD</span>
+                <div class="swatch-group" aria-label="Colores disponibles">
+                  <span class="swatch orange" title="Naranja"></span>
+                  <span class="swatch blue" title="Azul"></span>
+                  <span class="swatch black" title="Negro"></span>
+                </div>
+              </div>
+            </div>
+            <a class="btn secondary" href="product.html">Ver detalles</a>
+          </article>
+          <article class="product-card reveal" data-variant-card="blue" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/outdoor-power.svg" alt="SolarGuard 10K azul en exteriores">
+            </div>
+            <div class="product-card-body">
+              <h3>SolarGuard 10K Azul</h3>
+              <p>Estética urbana y múltiples salidas para alimentar más de un dispositivo a la vez.</p>
+              <div class="product-meta">
+                <span>$30 USD</span>
+                <div class="swatch-group" aria-label="Colores disponibles">
+                  <span class="swatch orange" title="Naranja"></span>
+                  <span class="swatch blue" title="Azul"></span>
+                  <span class="swatch black" title="Negro"></span>
+                </div>
+              </div>
+            </div>
+            <a class="btn secondary" href="product.html">Ver detalles</a>
+          </article>
+          <article class="product-card reveal" data-variant-card="black" data-reveal="up">
+            <div class="product-card-media media-frame">
+              <img src="assets/gallery/10000mah-emergency.svg" alt="SolarGuard 10K negro con luces LED">
+            </div>
+            <div class="product-card-body">
+              <h3>SolarGuard 10K Negro</h3>
+              <p>Acabado monocromático con linterna dual y protección total contra sobrecargas.</p>
+              <div class="product-meta">
+                <span>$30 USD</span>
+                <div class="swatch-group" aria-label="Colores disponibles">
+                  <span class="swatch orange" title="Naranja"></span>
+                  <span class="swatch blue" title="Azul"></span>
+                  <span class="swatch black" title="Negro"></span>
+                </div>
+              </div>
+            </div>
+            <a class="btn secondary" href="product.html">Ver detalles</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal" data-reveal="up">
+          <span>Testimonios TRY-O</span>
+          <h2>Usuarios que ya confían en SolarGuard 10K</h2>
+          <p>
+            Diseñamos experiencias reales: desde repartidores nocturnos hasta fotógrafos y familias en ruta. Ellos lo cuentan mejor.
+          </p>
+        </div>
+        <div class="testimonials">
+          <article class="testimonial-card reveal" data-reveal="left">
+            <div class="testimonial-author">
+              <strong>Sofía · Guía turística</strong>
+              <span>Ciudad de México</span>
+            </div>
+            <p>
+              “Salgo con grupos todos los días y mi teléfono siempre va al máximo. El panel solar me salva durante recorridos largos
+              y la linterna doble ha sido esencial para emergencias.”
+            </p>
+          </article>
+          <article class="testimonial-card reveal" data-reveal="up">
+            <div class="testimonial-author">
+              <strong>Marcos · Fotógrafo urbano</strong>
+              <span>Buenos Aires</span>
+            </div>
+            <p>
+              “Me encanta el diseño minimalista. No desentona con mi equipo y puedo cargar cámaras, gimbals y el smartphone sin cables extra.”
+            </p>
+          </article>
+          <article class="testimonial-card reveal" data-reveal="right">
+            <div class="testimonial-author">
+              <strong>Ana · Arquitecta</strong>
+              <span>Madrid</span>
+            </div>
+            <p>
+              “Trabajo entre la oficina y obras en construcción. SolarGuard 10K aguanta golpes, polvo y mantiene mi tablet con energía todo el día.”
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container cta-panel reveal" data-reveal="up">
+        <h2>Prepárate para cualquier jornada con TRY-O</h2>
+        <p>
+          Simplifica tu mochila y mantente siempre conectado. Compra hoy mismo o escríbenos para coordinar pedidos corporativos y personalizados.
+        </p>
+        <div class="hero-cta" style="justify-content: center;">
+          <a class="btn" href="product.html">Comprar SolarGuard 10K</a>
+          <a class="btn secondary" href="contact.html">Solicitar información</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid reveal">
+      <div>
+        <img src="assets/logo.svg" alt="TRY-O" style="width:120px; margin-bottom:16px;">
+        <p>TRY-O crea soluciones de energía portátil con un enfoque minimalista, seguro y adaptable a la vida urbana.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>hola@try-o.energy</p>
+        <p>+1 (305) 555-0192</p>
+        <p>Av. Neón 45, Ciudad Global</p>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+    <small>Gracias por visitarnos · © TRY-O 2024</small>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

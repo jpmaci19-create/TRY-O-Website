@@ -1,0 +1,15 @@
+<svg width="480" height="200" viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">TRY-O logotipo</title>
+  <desc id="desc">Logotipo TRY-O con fondo negro y palabra TRY=O formada por líneas concéntricas blancas.</desc>
+  <rect width="480" height="200" rx="24" ry="24" fill="#020202" />
+  <g id="word" transform="translate(40,30)" fill="none">
+    <text x="200" y="90" text-anchor="middle" font-family="'Montserrat', 'Futura PT', 'Avenir', sans-serif" font-weight="700" font-size="100" letter-spacing="20">TRY=O</text>
+  </g>
+  <g fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <use href="#word" stroke="#ffffff" stroke-width="26" />
+    <use href="#word" stroke="#020202" stroke-width="18" />
+    <use href="#word" stroke="#ffffff" stroke-width="12" />
+    <use href="#word" stroke="#020202" stroke-width="8" />
+    <use href="#word" stroke="#ffffff" stroke-width="4" />
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050505" />
+      <stop offset="100%" stop-color="#1b1b1b" />
+    </linearGradient>
+    <style>
+      .label { font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; fill: #f5f5f5; }
+      .title { font-size: 60px; font-weight: 700; text-transform: uppercase; }
+      .subtitle { font-size: 30px; font-weight: 600; fill: #9ae83b; }
+      .body { font-size: 24px; fill: #d0d0d0; }
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <text class="label title" x="120" y="160">Garantía de seguridad</text>
+  <text class="label subtitle" x="120" y="220">Multiprotección</text>
+  <text class="label body" x="120" y="280">Mantenga su batería segura</text>
+  <rect x="120" y="320" width="960" height="360" rx="36" fill="#111" stroke="#3f3f3f" stroke-width="6" />
+  <text class="label body" x="180" y="380">• Protección contra sobrecargas</text>
+  <text class="label body" x="180" y="430">• Protección contra sobre descargas</text>
+  <text class="label body" x="180" y="480">• Protección contra cortocircuitos</text>
+  <text class="label body" x="180" y="530">• Protección de recuperación</text>
+  <text class="label body" x="620" y="380">• Protección del campo electromagnético</text>
+  <text class="label body" x="620" y="430">• Protección contra sobrecalentamiento</text>
+  <text class="label body" x="620" y="480">• Protección contra sobre tensión</text>
+  <text class="label body" x="620" y="530">• Protección contra sobre corriente</text>
+  <circle cx="900" cy="500" r="120" fill="#0d0d0d" stroke="#9ae83b" stroke-width="10" />
+  <rect x="860" y="420" width="80" height="160" rx="26" fill="#161616" />
+  <circle cx="900" cy="520" r="28" fill="#9ae83b" />
+</svg>

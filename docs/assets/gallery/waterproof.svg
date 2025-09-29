@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070707" />
+      <stop offset="100%" stop-color="#1b1b1b" />
+    </linearGradient>
+    <style>
+      .label { font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; fill: #f5f5f5; }
+      .title { font-size: 60px; font-weight: 700; text-transform: uppercase; letter-spacing: 6px; }
+      .subtitle { font-size: 28px; font-weight: 600; fill: #9ae83b; text-transform: uppercase; }
+      .body { font-size: 24px; fill: #d0d0d0; }
+      .card { fill: rgba(32, 32, 32, 0.75); stroke: rgba(154, 232, 59, 0.4); stroke-width: 3; rx: 32; }
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <text class="label title" x="120" y="150">Waterproof</text>
+  <text class="label title" x="120" y="230">Dustproof</text>
+  <text class="label title" x="120" y="310">Shockproof</text>
+  <rect class="card" x="120" y="360" width="960" height="320" />
+  <text class="label subtitle" x="160" y="430">Protección total 360°</text>
+  <text class="label body" x="160" y="490">Sellado IP65 contra lluvia intensa y salpicaduras inesperadas.</text>
+  <text class="label body" x="160" y="540">Cubiertas anti polvo para cada puerto: USB-A dual y USB-C.</text>
+  <text class="label body" x="160" y="590">Amortiguadores laterales de silicona absorben impactos.</text>
+  <rect x="780" y="400" width="230" height="280" rx="40" fill="#101010" stroke="#ff7f27" stroke-width="8" />
+  <rect x="820" y="440" width="150" height="200" rx="28" fill="#171717" />
+  <circle cx="895" cy="600" r="36" fill="#9ae83b" />
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090909" />
+      <stop offset="100%" stop-color="#202020" />
+    </linearGradient>
+    <style>
+      .label { font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; fill: #f5f5f5; }
+      .title { font-size: 64px; font-weight: 700; text-transform: uppercase; }
+      .subtitle { font-size: 30px; font-weight: 600; fill: #9ae83b; letter-spacing: 2px; }
+      .body { font-size: 26px; fill: #d0d0d0; }
+      .badge { font-size: 22px; text-transform: uppercase; letter-spacing: 3px; fill: #ffef5c; }
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <text class="label subtitle" x="120" y="170">Solar Charge Bank</text>
+  <text class="label title" x="120" y="250">Huge Capacity,</text>
+  <text class="label title" x="120" y="320">High Speed</text>
+  <text class="label body" x="120" y="400">Panel solar monocristalino integrado.</text>
+  <text class="label body" x="120" y="450">Hasta 3 dispositivos conectados en paralelo.</text>
+  <text class="label body" x="120" y="500">Velocidad de recarga inteligente con PD 20W.</text>
+  <rect x="720" y="180" width="300" height="440" rx="60" fill="#111" stroke="#3f3f3f" stroke-width="6" />
+  <rect x="760" y="220" width="220" height="360" rx="40" fill="#151515" />
+  <rect x="760" y="360" width="220" height="80" fill="#0c0c0c" />
+  <rect x="780" y="600" width="260" height="24" rx="12" fill="#292929" />
+  <text class="label badge" x="120" y="600">Carga solar sobre la marcha</text>
+</svg>
